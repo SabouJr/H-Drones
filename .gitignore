@@ -4,3 +4,4 @@
 /.sass-cache
 .sass-cache
 /bower_component
+.DS_Store

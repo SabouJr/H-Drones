@@ -1,3 +1,13 @@
+// Font
+@font-face {
+font-family: 'MuseoSans-500';
+src: url('../webfonts/MuseoSans-500.eot') format('eot'),
+     url('../webfonts/MuseoSans-500.ttf') format('truetype'),
+     url('../webfonts/MuseoSans-500.woff') format('woff'),
+     url('../webfonts/MuseoSans-500.svg') format('svg'),
+		 url('../webfonts/MuseoSans-500.woff2');
+}
+
 // Misc.
 	$misc: (
 		z-index-base:		10000
@@ -20,8 +30,8 @@
 
 // Font.
 	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
+		family:				('MuseoSans-500', Helvetica, sans-serif),
+		family-fixed:		('Arial', monospace),
 		weight:				300,
 		weight-bold:		600,
 		letter-spacing:		0.025em,
@@ -43,5 +53,10 @@
 		accent3:			#ec8d81,
 		accent4:			#e7b788,
 		accent5:			#8ea9e8,
-		accent6:			#87c5a4
+		accent6:			#87c5a4,
+		chart-black:        #231F20,
+		chart-blue:         #0093D5,
+		chart-green:        #17683A,
+		chart-green-light:  #45A04A,
+		chart-yellow: #888A90,
 	);

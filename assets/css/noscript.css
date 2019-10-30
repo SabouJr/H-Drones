@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'MuseoSans-500';
+  src: url("../webfonts/MuseoSans-500.eot") format("eot"), url("../webfonts/MuseoSans-500.ttf") format("truetype"), url("../webfonts/MuseoSans-500.woff") format("woff"), url("../webfonts/MuseoSans-500.svg") format("svg"), url("../webfonts/MuseoSans-500.woff2");
+}
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
