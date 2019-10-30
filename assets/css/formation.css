@@ -138,7 +138,7 @@ html {
 .parallax__layer--logo {
   position: fixed;
   transform: translateZ(-3px) scale(4);
-  background-image: url(http://skyworks.enormo.us/assets/img/logo.png);
+  background-image: url(logo-blanc.png);
   right: 0px;
   width: 30vw;
   margin: auto;

@@ -1,11 +1,11 @@
 // Font
 @font-face {
 font-family: 'MuseoSans-500';
-src: url('../webfonts/MuseoSans-500.eot') format('eot'),
-     url('../webfonts/MuseoSans-500.ttf') format('truetype'),
-     url('../webfonts/MuseoSans-500.woff') format('woff'),
-     url('../webfonts/MuseoSans-500.svg') format('svg'),
-		 url('../webfonts/MuseoSans-500.woff2');
+src: url('./../webfonts/MuseoSans-500.eot') format('eot'),
+     url('./../webfonts/MuseoSans-500.ttf') format('truetype'),
+     url('./../webfonts/MuseoSans-500.woff') format('woff'),
+     url('./../webfonts/MuseoSans-500.svg') format('svg'),
+		 url('./../webfonts/MuseoSans-500.woff2');
 }
 
 // Misc.
@@ -41,13 +41,13 @@ src: url('../webfonts/MuseoSans-500.eot') format('eot'),
 // Palette.
 	$palette: (
 		bg:					#242943,
-		bg-alt:				#2a2f4a,
+		bg-alt:				#FFFFFF,
 		fg:					#ffffff,
 		fg-bold:			#ffffff,
 		fg-light:			rgba(244,244,255,0.2),
 		border:				rgba(212,212,255,0.1),
 		border-bg:			rgba(212,212,255,0.035),
-		highlight:			#9bf1ff,
+		highlight:			#231F20,
 		accent1:			#6fc3df,
 		accent2:			#8d82c4,
 		accent3:			#ec8d81,
@@ -58,5 +58,5 @@ src: url('../webfonts/MuseoSans-500.eot') format('eot'),
 		chart-blue:         #0093D5,
 		chart-green:        #17683A,
 		chart-green-light:  #45A04A,
-		chart-yellow: #888A90,
+		chart-yellow: #f1bc30,
 	);
