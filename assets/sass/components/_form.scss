@@ -76,6 +76,7 @@
 		letter-spacing: _font(letter-spacing-alt);
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 		text-transform: uppercase;
+
 	}
 
 	input[type="text"],
@@ -144,6 +145,7 @@
 
 	textarea {
 		padding: 0.75em 1em;
+		border-color: _palette(yellow);
 	}
 
 	input[type="checkbox"],

@@ -9,6 +9,27 @@
 	#main {
 		background-color: _palette(bg-alt);
 
+		.video {
+			height: 100vh;
+			width: 100vw;
+
+			img {
+				height: 100vh;
+				width: 100vw;
+			}
+		}
+
+		.inner {
+			img {
+				height: 100%;
+				width: 100%;
+			}
+
+			header{
+				margin: auto;
+			}
+		}
+
 		> * {
 			border-top: solid 1px _palette(border);
 
@@ -23,7 +44,28 @@
 			background-color: transparent;
 			border-bottom: solid 1px _palette(border);
 		}
-		.secteurs {
-			margin: 0 35px;
+
+		.footer {
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+		.div-section {
+			height: 500px;
+			width: 60%;
+			border: solid 2px _palette(chart-yellow);
+			background-color: #ffffff;
+			text-align: center;
+			color: #95a5a6;
+			top: -500px;
+			left: 20%;
+			margin: 0 auto;
+			z-index: 9999;
+			position: fixed;
+			transition: 0.8s;
+			h1 {
+				padding-top: 60px;
+			}
 		}
 	}
