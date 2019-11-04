@@ -69,7 +69,7 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
+		color: _palette(#000000);
 		display: block;
 		font-size: 0.8em;
 		font-weight: _font(weight-bold);
@@ -89,7 +89,7 @@
 	textarea {
 		@include vendor('appearance', 'none');
 		background: _palette(border-bg);
-		border: none;
+		border: solid 3px _palette(chart-yellow);
 		border-radius: 0;
 		color: inherit;
 		display: block;

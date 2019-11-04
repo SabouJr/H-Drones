@@ -1,6 +1,15 @@
 /* Wrapper */
 
 	#wrapper {
+		.footer-img {
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+		.text-formation {
+			text-align: center;
+		}
 		@include vendor('transition', (
 			'filter #{_duration(menu)} ease',
 			'-webkit-filter #{_duration(menu)} ease',
@@ -16,6 +25,6 @@
 		}
 
 		@include breakpoint('<=small') {
-			padding-top: 2.75em;
+			
 		}
 	}

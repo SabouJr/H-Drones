@@ -4,10 +4,11 @@
 		<title>HDRONES</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" />
 		<link rel="stylesheet" href="assets/css/main.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload home">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -39,9 +40,11 @@
 
 				<!-- Main -->
 					<div id="main">
-						<section class="video">
-							<img src="./assets/images/home.jpg" alt="">
-						</section>
+						<div class="container-video">
+							<img class="logo-video" src="./assets/images/logo-blanc.png">
+							<div class="img-header-footer"></div>
+							<iframe class='video' width="1280" height="497" src="https://www.youtube.com/embed/vfCqAbnQdy0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=vfCqAbnQdy0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+						</div>
 						<!-- One -->
 							<section id="one" class="tiles secteurs">
 								<article onclick="openSection('section-formation')">
@@ -52,7 +55,7 @@
 										<h3>Formation</h3>
 									</header>
 									<div id="section-formation" class="div-section">
-										<a class="close" onclick="closeSection('section-formation')">Close</a>
+										<a class="close">Close</a>
 										<h1>Formation</h1>
 										<p>Venez vous former avec notre équipe au métier de télépilote drone dans de multiples domaines florissant :
 
@@ -81,7 +84,7 @@
 										<h3>Humanitaire</h3>
 									</header>
 									<div id="section-humanitaire" class="div-section">
-										<a class="close" onclick="closeSection('section-humanitaire')">Close</a>
+										<a class="close">Close</a>
 										<h1>Humanitaire</h1>
 										<p>En accord avec notre vision de livraison pour tous, nous proposons notre service de livraison aux causes humanitaires. Nous nous mettons à disposition des organismes contribuant aux causes humanitaires à travers le monde.</p>
 									</div>
@@ -107,7 +110,7 @@
 										<h3>Pharmaceutique</h3>
 									</header>
 									<div id="section-pharmaceutique" class="div-section">
-										<a class="close" onclick="closeSection('section-pharmaceutique')">Close</a>
+										<a class="close">Close</a>
 										<h1>Pharmaceutique</h1>
 										<p>Lors de cas d’urgences médicales, chaque seconde compte. Nous optimisons des stocks des pharmacies partenaires et livrons des médicaments pour des personnes à mobilité réduite</p>
 									</div>
@@ -120,18 +123,50 @@
 										<h3>Restauration</h3>
 									</header>
 									<div id="section-restauration" class="div-section">
-										<a class="close" onclick="closeSection('section-restauration')">Close</a>
+										<a class="close">Close</a>
 										<h1>Restauration</h1>
 										<p>Hdrones s’engage à vous offrir un moment convivial autour de vos plat préféré à partager avec vos proches ou vos collègues de travail.</p>
 									</div>
 								</article>
 							</section>
 
+							<!-- Objectifs -->
+							<section class="container-objectifs">
+							<div class="appear" data-delai="0">
+								<div class="container-picto">
+									<img class="icon"src="./assets/images/picto1.png" alt="" />
+								</div>
+								<h4>SÉCURITÉ</h4>
+								<p>Un design unique qui permet une protection totale des hélices</p>
+							</div>
+							<div class="appear" data-delai="0">
+								<div class="container-picto">
+									<img class="icon" src="./assets/images/picto2.png" alt="" />
+								</div>
+								<h4>RAPIDITÉ</h4>
+								<p>La sécurité unique grace aux hélices protégées et au design breveté.</p>
+							</div>
+							<div class="appear" data-delai="0">
+								<div class="container-picto">
+									<img class="icon"src="./assets/images/picto3.png" alt="" />
+								</div>
+								<h4>ÉCOLOGIE</h4>
+								<p>Le drone fonctionne totalement à l’électricité et est conçut à partir de biomatériaux recyclable.</p>
+							</div>
+							<div class="appear" data-delai="0">
+								<div class="container-picto">
+									<img class="icon" src="./assets/images/picto4.png" alt="" />
+								</div>
+								<h4>MOBILITÉ URBAINE</h4>
+								<p>Hdrones évite tout type de problème dû aux transports conventionnels : feu de circulation, embouteillages...</p>
+							</div>
+						</section>
+
 						<!-- Two -->
-						<section id="one">
+						<section id="one" class="container-palmares">
 							<div class="inner">
 								<header class="major">
-									<h1>Notre palamrès</h1>
+									<h1>Notre palmarès</h1>
 								</header>
 								<img class="concours"src="./assets/images/palmares.png" alt="">
 							</div>
@@ -142,17 +177,56 @@
 									<header class="major">
 										<h1>Ils nous font confiance</h1>
 									</header>
-									<img src="./assets/images/clients.png" alt="">
+									<img class="clients" src="./assets/images/clients.png" alt="">
 									<ul class="actions">
 										<li><a href="landing.html" class="button next">Get Started</a></li>
 									</ul>
 								</div>
 							</section>
-							<div class="footer">
-								<img src="./assets/images/footer.jpg" alt="HDRONES">
-							</div>
 					</div>
+					<!-- Contact -->
+						<section id="contact">
+							<div class="inner">
+								<section class="map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5250.742746667802!2d2.326135526656632!3d48.85112831714705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x47e671d0d17860cd%3A0xa1332a9510d0c2!2s76b%20Rue%20de%20Rennes%2C%2075006%20Paris!3m2!1d48.8511284!2d2.3305129!4m0!5e0!3m2!1sfr!2sfr!4v1572876636893!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+								</section>
+								<section class="split">
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-envelope"></span>
+											<h3>Email</h3>
+											<a href="#">contact@h-drones.com</a>
+										</div>
+									</section>
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-phone"></span>
+											<h3>Phone</h3>
+											<span>06 17 82 13 38</span>
+										</div>
+									</section>
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-home"></span>
+											<h3>Address</h3>
+											<span>76bis rue de Rennes, 75006, Paris</span>
+										</div>
+									</section>
+								</section>
+							</div>
+						</section>
 			</div>
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<li><a href="https://www.facebook.com/HdronesOfficial/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<li><a href="https://www.linkedin.com/company/hdrones/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</div>
+				</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

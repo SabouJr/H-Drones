@@ -27,7 +27,7 @@
 
 			> .split {
 				padding: 0;
-
+				margin: 21px 0 0 25px;
 				> * {
 					@include padding(3em, 0, (0, 0, 0, 3em));
 					position: relative;
@@ -49,9 +49,20 @@
 					}
 				}
 			}
+			.map {
+				text-align: center;
+				iframe {
+					border-top: solid 3px _palette(chart-yellow) !important;
+					border-bottom: solid 3px _palette(chart-yellow) !important;
+				}
+			}
 		}
 
 		@include breakpoint('<=medium') {
+			.split {
+				display: flex;
+				justify-content: space-between;
+			}
 			> .inner {
 				display: block;
 
@@ -84,10 +95,24 @@
 		}
 
 		@include breakpoint('<=small') {
+			.map {
+				display: none;
+			}
 			> .inner {
 				> :nth-child(2n - 1) {
 					@include padding(3em, 0, (0, 0, 0, 0));
 				}
 			}
+		}
+		@include breakpoint('<=small') {
+			.split{
+				display: none;
+			}
+		}
+	}
+	#contact-formation {
+		.inner {
+			padding: 0 !important;
+			max-width: 700px !important;
 		}
 	}

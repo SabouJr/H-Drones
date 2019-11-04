@@ -17,6 +17,12 @@
 			box-shadow: none;
 		}
 	}
+	.formation, .home {
+		#header {
+			background-color: _palette(chart-yellow);
+			position: fixed !important;
+		}
+	}
 	#header {
 		display: flex;
 		align-items: center;

@@ -28,6 +28,12 @@
 				}
 			}
 		}
+		.icons {
+			text-align: center;
+		}
+		.icon.alt:before {
+		  background-color: _palette(chart-yellow);
+		}
 
 		@include breakpoint('<=xsmall') {
 			.copyright {
