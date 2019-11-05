@@ -44,6 +44,15 @@
 			}
 		}
 	}
+	#footer {
+		.icon {
+			&.alt {
+				&:before {
+					color: #FFFFFF;
+				}
+			}
+		}
+	}
 
 	a.icon {
 		&.alt {

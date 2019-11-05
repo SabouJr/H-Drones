@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" />
 		<link rel="stylesheet" href="assets/css/main.css"/>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload home">
@@ -14,10 +15,10 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
+					<header id="header" class="alt">
 						<a href="index.html" class="logo"><img src="./assets/images/logo-blanc.png" alt="HDRONES"></a>
 						<nav>
-							<a href="#menu">Menu</a>
+							<a id="menu-nav" href="#menu">Menu</a>
 						</nav>
 					</header>
 
@@ -40,144 +41,229 @@
 
 				<!-- Main -->
 					<div id="main">
-						<div class="container-video">
+						<div id="video-fond">
 							<img class="logo-video" src="./assets/images/logo-blanc.png">
 							<div class="img-header-footer"></div>
-							<iframe class='video' width="1280" height="497" src="https://www.youtube.com/embed/vfCqAbnQdy0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=vfCqAbnQdy0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+						  <!-- <video autoplay loop muted playsinline>
+						    <source type="video/mp4" src="videos/header-video.MP4" media="(orientation: landscape)">
+						  </video> -->
 						</div>
+							<div class="img-header-footer"></div>
 						<!-- One -->
-							<section id="one" class="tiles secteurs">
-								<article onclick="openSection('section-formation')">
-									<span class="image">
-										<img src="./assets/images/formation.jpg" alt="Formation" />
-									</span>
-									<header class="major">
-										<h3>Formation</h3>
-									</header>
-									<div id="section-formation" class="div-section">
-										<a class="close">Close</a>
-										<h1>Formation</h1>
-										<p>Venez vous former avec notre équipe au métier de télépilote drone dans de multiples domaines florissant :
+						<section id="one" class="tiles secteurs">
+							<article onclick="openSection('section-pharmaceutique')">
+								<span class="image">
+									<img src="./assets/images/pharmaceutique.jpg" alt="Pharmaceutique" />
+								</span>
+								<header class="major">
+									<h3>Pharmaceutique</h3>
+								</header>
+								<div id="section-pharmaceutique" class="div-section">
+									<a class="close">Close</a>
+									<h1>Pharmaceutique</h1>
+									<p>Prenez soin de vos proches en situation d’handicap et à mobilité réduite via nos livraisons de
+médicaments, même dans les lieux difficiles d’accès.<br/><br/>
+Optimisez le stock de votre pharmacie via le réapprovisionnement effectué par nos drones.</p>
+								</div>
+							</article>
+							<article onclick="openSection('section-restauration')">
+								<span class="image">
+									<img src="./assets/images/restauration.jpg" alt="Restauration" />
+								</span>
+								<header class="major">
+									<h3>Restauration</h3>
+								</header>
+								<div id="section-restauration" class="div-section">
+									<a class="close">Close</a>
+									<h1>Restauration</h1>
+									<p>Faites-vous livrer votre repas favori où que vous soyez ! Hdrones s’engage à vous offrir un moment
+convivial autour de vos plats préférés à partager avec vos proches ou vos collègues de travail.</p>
+								</div>
+							</article>
+							<article onclick="openSection('section-distribution')">
+								<span class="image">
+									<img src="./assets/images/grande-distribution.jpg" alt="Grande Distribution" />
+								</span>
+								<header class="major">
+									<h3>Grande distribution</h3>
+								</header>
+								<div id="section-distribution" class="div-section">
+									<a class="close" onclick="closeSection('section-distribution')">Close</a>
+									<h1>Grande distribution</h1>
+									<p>Faites-vous livrer directement chez vous ou bien à un point relais vos achats divers et variés par nos
+drones. Nous vous proposons notre solution pour la livraison du dernier kilomètre qui répond à ces
+enjeux et aux problématiques d'engorgement des centres villes.</p>
+								</div>
+							</article>
+							<article onclick="openSection('section-logistique')">
+								<span class="image">
+									<img src="./assets/images/logistique.jpg" alt="Logistique" />
+								</span>
+								<header class="major">
+									<h3>Logistique</h3>
+								</header>
+								<div id="section-logistique" class="div-section">
+									<a class="close" onclick="closeSection('section-logistique')">Close</a>
+									<h1>Logistique</h1>
+									<p>Intégrez nos drones dans les centres logistiques et sites industriels dans le but de fluidifier les
+déplacements et d’améliorer la qualité de votre service.<br/><br/>
+Hdrones vous propose une solution optimale pour soutenir vos moyens de livraisons. Via
+l’optimisation de vos flux de marchandise grâce à nos drones. </p>
+								</div>
+							</article>
+							<article onclick="openSection('section-humanitaire')">
+								<span class="image">
+									<img src="./assets/images/humanitaire.jpg" alt="Humanitaire" />
+								</span>
+								<header class="major">
+									<h3>Humanitaire</h3>
+								</header>
+								<div id="section-humanitaire" class="div-section">
+									<a class="close">Close</a>
+									<h1>Humanitaire</h1>
+									<p>Car venir en aide à son prochain fait partie intégrante de notre philosophie, nous mettons à
+disposition nos services de livraison aux causes humanitaires. Nous souhaitons soutenir ces
+organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer à travers le monde.</p>
+								</div>
+							</article>
+							<article onclick="openSection('section-formation')">
+								<span class="image">
+									<img src="./assets/images/formation.jpg" alt="Formation" />
+								</span>
+								<header class="major">
+									<h3>Formation</h3>
+								</header>
+								<div id="section-formation" class="div-section">
+									<a class="close">Close</a>
+									<h1>Formation</h1>
+									<p>Venez vous former avec notre équipe au métier de télépilote drone dans de multiples domaines florissant :
 
-											Audiovisuel. Inspection & BTP, Sécurité & Protection, Photogrammétrie, ...</p>
-									</div>
-								</article>
-								<article onclick="openSection('section-distribution')">
-									<span class="image">
-										<img src="./assets/images/grande-distribution.jpg" alt="Grande Distribution" />
-									</span>
-									<header class="major">
-										<h3>Grande distribution</h3>
-									</header>
-									<div id="section-distribution" class="div-section">
-										<a class="close" onclick="closeSection('section-distribution')">Close</a>
-										<h1>Grande distribution</h1>
-										<p>Nous vous apportons la possibilité de faire des achats divers et variés, livrable par drones.
-											Nous proposons notre solution pour la livraison du dernier kilomètre qui répondent à ces enjeux et aux problématiques d'engorgement des centres villes.</p>
-									</div>
-								</article>
-								<article onclick="openSection('section-humanitaire')">
-									<span class="image">
-										<img src="./assets/images/humanitaire.jpg" alt="Humanitaire" />
-									</span>
-									<header class="major">
-										<h3>Humanitaire</h3>
-									</header>
-									<div id="section-humanitaire" class="div-section">
-										<a class="close">Close</a>
-										<h1>Humanitaire</h1>
-										<p>En accord avec notre vision de livraison pour tous, nous proposons notre service de livraison aux causes humanitaires. Nous nous mettons à disposition des organismes contribuant aux causes humanitaires à travers le monde.</p>
-									</div>
-								</article>
-								<article onclick="openSection('section-logistique')">
-									<span class="image">
-										<img src="./assets/images/logistique.jpg" alt="Logistique" />
-									</span>
-									<header class="major">
-										<h3>Logistique</h3>
-									</header>
-									<div id="section-logistique" class="div-section">
-										<a class="close" onclick="closeSection('section-logistique')">Close</a>
-										<h1>Logistique</h1>
-										<p>Hdrones vous propose une solution optimale pour soutenir vos moyens de livraisons. Via l’optimisation de vos flux de marchandise grâce à nos drones.</p>
-									</div>
-								</article>
-								<article onclick="openSection('section-pharmaceutique')">
-									<span class="image">
-										<img src="./assets/images/pharmaceutique.jpg" alt="Pharmaceutique" />
-									</span>
-									<header class="major">
-										<h3>Pharmaceutique</h3>
-									</header>
-									<div id="section-pharmaceutique" class="div-section">
-										<a class="close">Close</a>
-										<h1>Pharmaceutique</h1>
-										<p>Lors de cas d’urgences médicales, chaque seconde compte. Nous optimisons des stocks des pharmacies partenaires et livrons des médicaments pour des personnes à mobilité réduite</p>
-									</div>
-								</article>
-								<article onclick="openSection('section-restauration')">
-									<span class="image">
-										<img src="./assets/images/restauration.jpg" alt="Restauration" />
-									</span>
-									<header class="major">
-										<h3>Restauration</h3>
-									</header>
-									<div id="section-restauration" class="div-section">
-										<a class="close">Close</a>
-										<h1>Restauration</h1>
-										<p>Hdrones s’engage à vous offrir un moment convivial autour de vos plat préféré à partager avec vos proches ou vos collègues de travail.</p>
-									</div>
-								</article>
-							</section>
-
-							<!-- Objectifs -->
-							<section class="container-objectifs">
-							<div class="appear" data-delai="0">
-								<div class="container-picto">
-									<img class="icon"src="./assets/images/picto1.png" alt="" />
+										Audiovisuel. Inspection & BTP, Sécurité & Protection, Photogrammétrie, ...</p>
 								</div>
-								<h4>SÉCURITÉ</h4>
-								<p>Un design unique qui permet une protection totale des hélices</p>
-							</div>
-							<div class="appear" data-delai="0">
-								<div class="container-picto">
-									<img class="icon" src="./assets/images/picto2.png" alt="" />
-								</div>
-								<h4>RAPIDITÉ</h4>
-								<p>La sécurité unique grace aux hélices protégées et au design breveté.</p>
-							</div>
-							<div class="appear" data-delai="0">
-								<div class="container-picto">
-									<img class="icon"src="./assets/images/picto3.png" alt="" />
-								</div>
-								<h4>ÉCOLOGIE</h4>
-								<p>Le drone fonctionne totalement à l’électricité et est conçut à partir de biomatériaux recyclable.</p>
-							</div>
-							<div class="appear" data-delai="0">
-								<div class="container-picto">
-									<img class="icon" src="./assets/images/picto4.png" alt="" />
-								</div>
-								<h4>MOBILITÉ URBAINE</h4>
-								<p>Hdrones évite tout type de problème dû aux transports conventionnels : feu de circulation, embouteillages...</p>
-							</div>
+							</article>
 						</section>
 
 						<!-- Two -->
-						<section id="one" class="container-palmares">
+						<section id="one" class="title-chiffres">
 							<div class="inner">
 								<header class="major">
-									<h1>Notre palmarès</h1>
+									<h1>Le marché s’envole</h1>
 								</header>
-								<img class="concours"src="./assets/images/palmares.png" alt="">
+								<p class="text-chiffres">Notre service de livraison par drone répond à une forte demande en croissance.<br/><br/>
+Chez Hdrones nous avons pour vocation de surmonter les inefficacités associées aux
+méthodes de transport traditionnelles.</p>
 							</div>
 						</section>
-
+						<section class="container-chiffres">
+							<div class="appear transi1" data-delai="0">
+								<h4><span class="chiffre" id="compteur1">0</span> Milliards d'euros</h4>
+								<p>Le marché du drone en 2020</p>
+							</div>
+							<div class="appear transi2" data-delai="0">
+								<h4>Les <span class="chiffre" id="compteur2">3</span> secteurs majeurs</h4>
+								<p>Défense, Publique, Industriel</p>
+							</div>
+							<div class="appear transi3" data-delai="0">
+								<h4><span class="chiffre" id="compteur3">13</span> Milliards d'euros</h4>
+								<p>Marché des drones commerciaux potentiels en 2020</p>
+							</div>
+						</section>
+						<section class="palmares-top">
+							<header class="major title-palmares">
+								<h1>Nos Récompense</h1>
+							</header>
+						</section>
+						<section class="container-palmares">
+							<div class="appear transi4" data-delai="0">
+								<div class="container-picto">
+									<img class="icon"src="./assets/images/pepite.png" alt="" />
+								</div>
+								<p class="palmares-text">Lauréat Pépite IDF</p>
+							</div>
+							<div class="transi4 appear-2" data-delai="0">
+								<p>Un des 8 finalistes à les représenter à l'internationnal</p>
+								<div class="container-picto">
+									<img class="icon" src="./assets/images/alibaba.png" alt="" />
+								</div>
+							</div>
+							<div class="transi4 appear" data-delai="0">
+								<div class="container-picto">
+									<img class="icon"src="./assets/images/elior-grp.png" alt="" />
+								</div>
+								<p class="palmares-text">Start-Up 4 life</p>
+							</div>
+							<div class="transi5 appear-2" data-delai="0">
+								<p>Lauréat du concours Coup2Boost</p>
+								<div class="container-picto">
+									<img class="icon" src="./assets/images/coca-cola.png" alt="" />
+								</div>
+							</div>
+							<div class="transi5 appear" data-delai="0">
+								<div class="container-picto">
+									<img class="icon"src="./assets/images/thero.png" alt="" />
+								</div>
+								<p class="palmares-text">Lauréat du concours Coup2Boost</p>
+							</div>
+							<div class="transi5 appear-2" data-delai="0">
+								<p>Start-Up 4 life</p>
+								<div class="container-picto">
+									<img class="icon" src="./assets/images/transalley.png" alt="" />
+								</div>
+							</div>
+							<div class="transi6 appear" data-delai="0">
+								<div class="container-picto">
+									<img class="icon"src="./assets/images/google.png" alt="" />
+								</div>
+								<p class="palmares-text">Invitation Google Leader Circle</p>
+							</div>
+								<div class="transi6 appear-2" data-delai="0">
+									<p>CHINA DEMO DAY</p>
+									<div class="container-picto">
+										<img class="icon" src="./assets/images/cd.png" alt="" />
+									</div>
+								</div>
+							<div class="transi6 appear" data-delai="0">
+								<div class="container-picto">
+									<img class="icon"src="./assets/images/psa.png" alt="" />
+								</div>
+								<p class="palmares-text">Rassemblement du siecle Groupe PSA</p>
+							</div>
+						</section>
 							<section id="two">
 								<div class="inner">
 									<header class="major">
 										<h1>Ils nous font confiance</h1>
 									</header>
-									<img class="clients" src="./assets/images/clients.png" alt="">
+									<!-- Slider main container -->
+									<div class="swiper-container">
+											<!-- Additional required wrapper -->
+											<div class="swiper-wrapper">
+													<!-- Slides -->
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/AB.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/AIM.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/alibaba.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/coca-cola.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/Deloitte.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/elior-grp.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/FT.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/google.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/guest-f.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/Inpi.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/Internest.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/loreal.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/MDLD.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/MDP.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/Moovjee.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/Paps.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/paris-saclay.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/pepite.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/psa.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/station-f.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/thero.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/transalley.png" alt=""></div>
+													<div class="swiper-slide"><img class="logo-partenaire"src="./assets/images/VDP.png" alt=""></div>
+											</div>
+									</div>
 									<ul class="actions">
 										<li><a href="landing.html" class="button next">Get Started</a></li>
 									</ul>
@@ -185,36 +271,42 @@
 							</section>
 					</div>
 					<!-- Contact -->
-						<section id="contact">
-							<div class="inner">
-								<section class="map">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5250.742746667802!2d2.326135526656632!3d48.85112831714705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x47e671d0d17860cd%3A0xa1332a9510d0c2!2s76b%20Rue%20de%20Rennes%2C%2075006%20Paris!3m2!1d48.8511284!2d2.3305129!4m0!5e0!3m2!1sfr!2sfr!4v1572876636893!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					<section id="contact">
+						<div class="inner">
+							<section class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5250.742746667802!2d2.326135526656632!3d48.85112831714705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x47e671d0d17860cd%3A0xa1332a9510d0c2!2s76b%20Rue%20de%20Rennes%2C%2075006%20Paris!3m2!1d48.8511284!2d2.3305129!4m0!5e0!3m2!1sfr!2sfr!4v1572876636893!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<div class="contact-adresse">
+										<img class="picto-contact" src="./assets/images/arroba.png">
+										<h3>Email</h3>
+										</div>
+										<a href="#">contact@h-drones.com</a>
+									</div>
 								</section>
-								<section class="split">
-									<section>
-										<div class="contact-method">
-											<span class="icon solid alt fa-envelope"></span>
-											<h3>Email</h3>
-											<a href="#">contact@h-drones.com</a>
+								<section>
+									<div class="contact-method">
+										<div class="contact-adresse">
+										<img class="picto-contact" src="./assets/images/telephone.png">
+										<h3>Téléphone</h3>
 										</div>
-									</section>
-									<section>
-										<div class="contact-method">
-											<span class="icon solid alt fa-phone"></span>
-											<h3>Phone</h3>
-											<span>06 17 82 13 38</span>
-										</div>
-									</section>
-									<section>
-										<div class="contact-method">
-											<span class="icon solid alt fa-home"></span>
-											<h3>Address</h3>
-											<span>76bis rue de Rennes, 75006, Paris</span>
-										</div>
-									</section>
+										<span>06 17 82 13 38</span>
+									</div>
 								</section>
-							</div>
-						</section>
+								<section>
+									<div class="contact-method">
+										<div class="contact-adresse">
+										<img class="picto-contact" src="./assets/images/placeholder.png">
+										<h3>Adresse</h3>
+										</div>
+										<span>76bis rue de Rennes, 75006, Paris</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
 			</div>
 			<!-- Footer -->
 				<footer id="footer">
@@ -232,10 +324,32 @@
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/popup.js"></script>
+			<script src="assets/js/home.js"></script>
+			<script>
+			  var mySwiper = new Swiper ('.swiper-container', {
+			    // Optional parameters
+					slidesPerView: 4,
+					infinite: true,
+					autoplay: {
+				    delay: 2000,
+				  },
+					coverflowEffect: {
+				    slideShadows: true,
+				  },
+			    direction: 'horizontal',
+			    loop: true,
+					freeMode: true,
+					breakpoints: {
+				    640: {
+				      slidesPerView: 7,
+				    }
+				  }
+			  })
+		  </script>
 	</body>
 </html>

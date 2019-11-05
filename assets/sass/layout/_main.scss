@@ -59,7 +59,7 @@
 				padding-top: 60px;
 			}
 			p {
-				margin: 15% 5%;
+				margin: 10% 5%;
 			}
 		}
 		.open-section {
@@ -95,17 +95,21 @@
 	.video-formation {
 		max-width: 950px;
 		width: 100%;
-		margin: 60px 0 100px 0;
+    margin: 50px 0 60px 0;
 		border-top: solid 2px _palette(chart-yellow);
 		border-bottom: solid 2px _palette(chart-yellow);
 	}
-	.container-video {
-    position: relative;
+	#video-fond {
 		width: 100vw;
-    height: 100vh;
-    //padding-bottom: 56.25%;
+		height: 100vh;
+		display: block;
+	  object-fit: cover;
 		.img-header-footer {
-			display: none
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: #fff url(./../images/img-header2.jpg) center center no-repeat;
+			background-size: 100% auto;
 		}
 		.logo-video {
 			z-index: 10;
@@ -119,19 +123,137 @@
 		  width: 300px;
 			transition: 0.8s;
 		}
-		iframe {
-				z-index: 3;
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    width: 100%;
-		    height: 100%;
-		}
 	}
-	.concours, .clients {
+	.remove-video {
+		display: none !important;
+	}
+	#video-fond > video {
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+		z-index: 9;
+	  top: 0;
+	  left: 0;
+	}
+	/* 1. Pas de support d'object-fit */
+	@media (min-aspect-ratio: 16/9) {
+	  #video-fond > video {
+	    height: 300%;
+	    top: -100%;
+	  }
+	}
+	@media (max-aspect-ratio: 16/9) {
+	  #video-fond > video {
+	    width: 300%;
+	    left: -100%;
+	  }
+	}
+	/* 2. En cas de support d'object-fit, écrase les règles en (1) */
+	@supports (object-fit: cover) {
+	  #video-fond > video {
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    object-fit: cover;
+	  }
+	}
+	.text-chiffres {
 		opacity: 0;
 		transition: 1.2s;
 	}
+	.transi1, .transi4 {
+		opacity: 0;
+		transition: 1s;
+	}
+	.transi2, .transi5 {
+		opacity: 0;
+		transition: 2.5s;
+	}
+	.transi3, .transi6 {
+		opacity: 0;
+		transition: 4s;
+	}
+	.container-chiffres {
+		display: flex;
+		flex: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.appear {
+			border: solid 2px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			border-color: _palette(chart-yellow);
+			text-align: center;
+	    margin: 15px 0;
+			width: 300px;
+			height: 170px;
+			font-size: 16px;
+			box-shadow: 8px 8px 12px #aaa;
+			h4 {
+				margin-top: 15px;
+			}
+			.chiffre {
+				color: _palette(chart-yellow);
+			}
+		}
+	}
+	.container-palmares {
+		margin-top: 65px;
+		display: flex;
+		flex: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.appear {
+			text-align: center;
+			width: 250px;
+			height: 100%;
+			font-size: 13px;
+			color: grey;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.appear-2 {
+			text-align: center;
+			width: 250px;
+			height: 100%;
+			font-size: 13px;
+			color: grey;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.icon {
+			width: 65%;
+			height: 65%;
+		}
+		.container-picto {
+			margin: auto;
+			border: solid 2px;
+			border-color: _palette(chart-yellow);
+			border-radius: 65%;
+			height: 100px;
+			width: 100px;
+			align-items: center;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		}
+		.title-palmares {
+				text-align: center;
+				margin: auto;
+				margin-top: 60px;
+		}
 	.container-objectifs {
 		margin-top: 90px;
 		display: flex;
@@ -151,12 +273,10 @@
 			}
 
 		}
-
 		.icon {
 			width: 100%;
 			height: 100%;
 		}
-
 		.container-picto {
 			margin: auto;
 			height: 55px;
@@ -164,17 +284,72 @@
 		}
 	}
 
-
-	@media only screen and (max-width: 900px) {
-		.container-video {
-  		.img-header-footer {
-  			display: block;
-				width:100%; height:100%;
-	      background:#fff url(./../images/img-header2.jpg) center center no-repeat;
-	      background-size:100% auto;
-  		}
-  		iframe {
-  			display: none
-  		}
-  	}
+	.swiper-container {
+    width: 90%;
+    height: 150px;
 	}
+	.swiper-slide {
+		display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+		img {
+			width: 100px;
+		}
+	}
+	 @media only screen and (max-width: 600px) {
+		 #main {
+	 		.text-chiffres {
+	 			opacity: 1;
+	 		}
+	 		.transi1 {
+	 			opacity: 1;
+	 		}
+	 		.transi2 {
+	 			opacity: 1;
+	 		}
+	 		.transi3 {
+	 			opacity: 1;
+	 		}
+	 		.transi4 {
+	 			opacity: 1;
+	 		}
+			.transi5 {
+	 			opacity: 1;
+	 		}
+			.transi6 {
+	 			opacity: 1;
+	 		}
+	 	}
+	 }
+
+	 @include breakpoint('<=medium'){
+			#main {
+				.container-palmares {
+					.appear-2 {
+						flex-direction: column-reverse;
+					}
+				}
+			}
+		}
+	// @media only screen and (max-width: 900px) {
+	// 	.container-video {
+  // 		.img-header-footer {
+  // 			display: block;
+	// 			width:100%; height:100%;
+	//       background:#fff url(./../images/img-header2.jpg) center center no-repeat;
+	//       background-size:100% auto;
+  // 		}
+  // 		iframe {
+  // 			display: none
+  // 		}
+  // 	}
+	// }
