@@ -170,7 +170,7 @@ a {
 /* line 39, ../sass/base/_typography.scss */
 a:hover {
   border-bottom-color: transparent;
-  color: #f1bc30 !important;
+  color: #bdc3c7 !important;
 }
 /* line 44, ../sass/base/_typography.scss */
 a:active {
@@ -1804,7 +1804,7 @@ header.major > :first-child {
 /* line 27, ../sass/components/_section.scss */
 header.major > :first-child:after {
   content: '';
-  background-color: #f1bc30;
+  background-color: #bdc3c7;
   display: block;
   height: 2px;
   margin: 0.325em 0 0.5em 0;
@@ -1935,7 +1935,7 @@ textarea {
   -ms-appearance: none;
   appearance: none;
   background: rgba(212, 212, 255, 0.035);
-  border: solid 3px #f1bc30;
+  border: solid 3px #bdc3c7;
   border-radius: 0;
   color: inherit;
   display: block;
@@ -2189,7 +2189,7 @@ a.icon.alt:before {
 }
 /* line 64, ../sass/components/_icon.scss */
 a.icon.alt:hover:before {
-  background-color: #f1bc30;
+  background-color: #bdc3c7;
 }
 /* line 70, ../sass/components/_icon.scss */
 a.icon.alt:active:before {
@@ -2868,7 +2868,7 @@ button:disabled,
 }
 /* line 117, ../sass/components/_tiles.scss */
 .tiles article:nth-child(6n - 4):before {
-  background-color: #f1bc30;
+  background-color: #bdc3c7;
 }
 /* line 123, ../sass/components/_tiles.scss */
 .tiles article:nth-child(6n - 3):before {
@@ -3135,7 +3135,7 @@ button:disabled,
 
 /* line 21, ../sass/layout/_header.scss */
 .formation #header, .home #header {
-  background-color: #f1bc30;
+  background-color: #bdc3c7;
   position: fixed !important;
 }
 
@@ -3664,8 +3664,8 @@ body.is-preload #banner > .inner {
 #main .div-section {
   height: 500px;
   width: 60%;
-  border-top: solid 3px #f1bc30;
-  border-bottom: solid 3px #f1bc30;
+  border-top: solid 3px #bdc3c7;
+  border-bottom: solid 3px #bdc3c7;
   background-color: #ffffff;
   text-align: center;
   color: #000000;
@@ -3700,8 +3700,8 @@ body.is-preload #banner > .inner {
 }
 /* line 75, ../sass/layout/_main.scss */
 #main .map iframe {
-  border-top: solid 2px #f1bc30;
-  border-bottom: solid 2px #f1bc30;
+  border-top: solid 2px #bdc3c7;
+  border-bottom: solid 2px #bdc3c7;
 }
 
 @media screen and (max-width: 736px) {
@@ -3723,8 +3723,8 @@ body.is-preload #banner > .inner {
   max-width: 950px;
   width: 100%;
   margin: 50px 0 60px 0;
-  border-top: solid 2px #f1bc30;
-  border-bottom: solid 2px #f1bc30;
+  border-top: solid 2px #bdc3c7;
+  border-bottom: solid 2px #bdc3c7;
 }
 
 /* line 106, ../sass/layout/_main.scss */
@@ -3836,7 +3836,7 @@ body.is-preload #banner > .inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-color: #f1bc30;
+  border-color: #bdc3c7;
   border-radius: 30px;
   text-align: center;
   margin: 15px 0;
@@ -3851,7 +3851,7 @@ body.is-preload #banner > .inner {
 }
 /* line 204, ../sass/layout/_main.scss */
 .container-chiffres .appear .chiffre {
-  color: #f1bc30;
+  color: #bdc3c7;
 }
 
 /* line 209, ../sass/layout/_main.scss */
@@ -3893,7 +3893,7 @@ body.is-preload #banner > .inner {
 .container-palmares .container-picto {
   margin: auto;
   border: solid 2px;
-  border-color: #f1bc30;
+  border-color: #bdc3c7;
   border-radius: 65%;
   height: 100px;
   width: 100px;
@@ -4077,8 +4077,8 @@ body.is-preload #banner > .inner {
 }
 /* line 54, ../sass/layout/_contact.scss */
 #contact > .inner .map iframe {
-  border-top: solid 3px #f1bc30 !important;
-  border-bottom: solid 3px #f1bc30 !important;
+  border-top: solid 3px #bdc3c7 !important;
+  border-bottom: solid 3px #bdc3c7 !important;
 }
 @media screen and (max-width: 980px) {
   /* line 62, ../sass/layout/_contact.scss */
@@ -4161,7 +4161,7 @@ body.is-preload #banner > .inner {
 }
 /* line 34, ../sass/layout/_footer.scss */
 #footer .icon.alt:before {
-  background-color: #f1bc30;
+  background-color: #bdc3c7;
 }
 @media screen and (max-width: 480px) {
   /* line 40, ../sass/layout/_footer.scss */
@@ -4388,7 +4388,7 @@ body.is-menu-visible #menu .inner {
 }
 /* line 157, ../sass/layout/_menu.scss */
 .close:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23f1bc30%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23bdc3c7%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
   opacity: 0;
 }
 /* line 163, ../sass/layout/_menu.scss */
