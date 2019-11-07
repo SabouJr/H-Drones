@@ -89,7 +89,7 @@
 	textarea {
 		@include vendor('appearance', 'none');
 		background: _palette(border-bg);
-		border: solid 3px _palette(chart-yellow);
+		border: solid 3px black;
 		border-radius: 0;
 		color: inherit;
 		display: block;
@@ -234,3 +234,5 @@
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
+
+
