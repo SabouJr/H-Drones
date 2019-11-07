@@ -47,6 +47,7 @@
 
 			h3 {
 				font-size: 1.75em;
+				color: white;
 
 				a {
 					&:hover {
@@ -115,7 +116,7 @@
 
 			&:nth-child(6n - 4) {
 				&:before {
-					background-color: _palette(chart-yellow);
+					background-color: _palette(chart-grey);
 				}
 			}
 

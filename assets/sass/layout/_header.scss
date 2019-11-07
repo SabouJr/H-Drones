@@ -19,7 +19,8 @@
 	}
 	.formation, .home {
 		#header {
-			background-color: _palette(chart-yellow);
+			box-shadow: 8px 8px 12px #aaa;
+			background-color: white;
 			position: fixed !important;
 		}
 	}
@@ -91,9 +92,9 @@
 
 				&[href="#menu"] {
 					padding-right: 3.325em !important;
-					color: _palette(bg-alt);
+					color: black;
 					&:hover {
-						color: _palette(bg-alt) !important;
+						color: black !important;
 					}
 					&:before, &:after {
 						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" preserveAspectRatio="none"><style>line { stroke-width: 2px; stroke: #{_palette(fg-bold)}; }</style><line x1="0" y1="11" x2="24" y2="11" /><line x1="0" y1="21" x2="24" y2="21" /><line x1="0" y1="16" x2="24" y2="16" /></svg>');
