@@ -10,7 +10,9 @@
 		border-bottom: solid 1px _palette(border);
 		overflow-x: hidden;
 		text-align: center;
-
+		.major {
+			margin: auto;
+		}
 		.contact-adresse {
 			justify-content: space-around;
 			display: flex;
@@ -39,9 +41,9 @@
 
 			> .split {
 				padding: 0;
-				margin: 21px 0 0 0px;
+				margin: 48px 0 0 0px;
 				> * {
-					@include padding(3em, 0, (0, 0, 0, 3em));
+					@include padding(1.5em, 0, (0, 0, 0, 3em));
 					position: relative;
 
 					&:before {
@@ -90,8 +92,10 @@
 				}
 
 				> .split {
+					display: flex;
+					flex-direction: column;
 					> * {
-						@include padding(3em, 0, (0, 0, 0, 0));
+						@include padding(1em, 0, (0, 0, 0, 0));
 
 						&:before {
 						}

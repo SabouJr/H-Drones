@@ -32,7 +32,7 @@
 			text-align: center;
 		}
 		.icon.alt:before {
-		  background-color: black;
+		  background-color: _palette(chart-black);
 		}
 
 		@include breakpoint('<=xsmall') {

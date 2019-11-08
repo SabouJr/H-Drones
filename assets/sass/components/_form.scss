@@ -89,7 +89,8 @@
 	textarea {
 		@include vendor('appearance', 'none');
 		background: _palette(border-bg);
-		border: solid 3px black;
+		border: solid 1px _palette(chart-yellow);
+		box-shadow: 8px 8px 12px #aaa;
 		border-radius: 0;
 		color: inherit;
 		display: block;
@@ -234,5 +235,3 @@
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
-
-
