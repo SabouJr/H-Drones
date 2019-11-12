@@ -39,15 +39,16 @@ function openSection(idElem) {
 
 // opacity effect
 var $secteursBottom = $('.secteurs').position().top + $('.secteurs').height();
+var $objectifsBottom = $('.container-objectifs').position().top + $('.container-objectifs').height();
 var $palmaresBottom = $('.palmares-top').position().top + $('.palmares-top').height();
 $(document).ready(function() {
 
  $(window).scroll(function() {
    if ($( window ).width() > 600) {
-     if($(window).scrollTop() >= $secteursBottom - 100) {
+     if($(window).scrollTop() >= $objectifsBottom - 100) {
        $('.text-chiffres').css("opacity", "1");
      }
-     if($(window).scrollTop() >= $secteursBottom) {
+     if($(window).scrollTop() >= $objectifsBottom - 180) {
        $('.transi1').css("opacity", "1");
        $('.transi2').css("opacity", "1");
        $('.transi3').css("opacity", "1");
@@ -56,6 +57,11 @@ $(document).ready(function() {
        $('.transi4').css("opacity", "1");
        $('.transi5').css("opacity", "1");
        $('.transi6').css("opacity", "1");
+     }
+     if($(window).scrollTop() >= $secteursBottom) {
+       $('.transi7').css("opacity", "1");
+       $('.transi8').css("opacity", "1");
+       $('.transi9').css("opacity", "1");
      }
    }
  })

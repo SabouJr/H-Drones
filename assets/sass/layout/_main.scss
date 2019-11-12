@@ -166,15 +166,15 @@
 		opacity: 0;
 		transition: 1.2s;
 	}
-	.transi1, .transi4 {
+	.transi1, .transi4, .transi7 {
 		opacity: 0;
 		transition: 1s;
 	}
-	.transi2, .transi5 {
+	.transi2, .transi5, .transi8 {
 		opacity: 0;
 		transition: 3s;
 	}
-	.transi3, .transi6 {
+	.transi3, .transi6, .transi9 {
 		opacity: 0;
 		transition: 6s;
 	}
@@ -205,6 +205,36 @@
 			}
 		}
 	}
+	.container-objectifs {
+  	margin: 40px 0;
+		display: flex;
+		flex: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+    flex-direction: row;
+		flex-wrap: wrap;
+		.appear {
+			text-align: center;
+			width: 400px;
+			margin-top: 25px;
+			height: 100%;
+			font-size: 16px;
+
+			h4 {
+				margin-top: 15px;
+			}
+
+		}
+		.icon {
+			width: 100%;
+			height: 100%;
+		}
+		.container-picto {
+			margin: auto;
+			height: 55px;
+			width: 55px;
+		}
+	}
 	.container-palmares {
 		display: flex;
 		width: 100%;
@@ -212,6 +242,10 @@
 		align-items: center;
 		flex-direction: row;
 		flex-wrap: wrap;
+		.flag-container {
+			width: 100%;
+    	height: auto;
+		}
 		.flip-card {
 			background-color: transparent;
 			width: 200px;
@@ -240,7 +274,12 @@
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			backface-visibility: hidden;
+			color: white;
+	    -webkit-perspective: 0;
+	    -webkit-backface-visibility: hidden;
+	    -webkit-transform: translate3d(0,0,0);
+	    visibility:visible;
+	    backface-visibility: hidden;
 		}
 
 		/* Style the front side (fallback if image is missing) */
@@ -264,6 +303,7 @@
 					display: block;
 					margin: 12px auto;
 					width: 20%;
+					height: 20%
 				}
 			}
 		}
@@ -283,14 +323,14 @@
 		flex-wrap: wrap;
 		.appear {
 			text-align: center;
-			width: 226px;
-			height: 100%;
+			width: 33%;
+			height: auto;
 			font-size: 16px;
-
+	    padding: 0 3%;
+			margin-bottom: 15px;
 			h4 {
 				margin-top: 15px;
 			}
-
 		}
 		.icon {
 			width: 100%;
@@ -299,6 +339,7 @@
 		.container-picto {
 			margin: auto;
 			height: 55px;
+			margin-bottom: 15px;
 			width: 55px;
 		}
 	}
@@ -329,22 +370,7 @@
 	 		.text-chiffres {
 	 			opacity: 1;
 	 		}
-	 		.transi1 {
-	 			opacity: 1;
-	 		}
-	 		.transi2 {
-	 			opacity: 1;
-	 		}
-	 		.transi3 {
-	 			opacity: 1;
-	 		}
-	 		.transi4 {
-	 			opacity: 1;
-	 		}
-			.transi5 {
-	 			opacity: 1;
-	 		}
-			.transi6 {
+	 		.transi1, .transi2, .transi3, .transi4, .transi5, .transi6, .transi7, .transi8, .transi9 {
 	 			opacity: 1;
 	 		}
 	 	}
@@ -378,6 +404,11 @@
 					}
 					.appear-2 {
 						width: 100%;
+					}
+				}
+				.container-objectifs {
+					.appear {
+						width: 50%;
 					}
 				}
 			}
