@@ -4265,23 +4265,27 @@ body.is-preload #banner > .inner {
   #main .div-section img {
     width: 50px;
   }
+  /* line 367, ../sass/layout/_main.scss */
+  #main .container-objectifs .appear {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 400px) {
-  /* line 371, ../sass/layout/_main.scss */
+  /* line 376, ../sass/layout/_main.scss */
   #main .container-palmares {
     flex-direction: column;
   }
-  /* line 373, ../sass/layout/_main.scss */
+  /* line 378, ../sass/layout/_main.scss */
   #main .container-palmares .appear {
     width: 100%;
   }
-  /* line 376, ../sass/layout/_main.scss */
+  /* line 381, ../sass/layout/_main.scss */
   #main .container-palmares .appear-2 {
     width: 100%;
   }
-  /* line 381, ../sass/layout/_main.scss */
+  /* line 386, ../sass/layout/_main.scss */
   #main .container-objectifs .appear {
-    width: 50%;
+    width: 90%;
   }
 }
 /* Contact */
