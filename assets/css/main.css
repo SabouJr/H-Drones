@@ -4092,41 +4092,7 @@ body.is-preload #banner > .inner {
   color: #bdc3c7;
 }
 
-/* line 208, ../sass/layout/_main.scss */
-.container-objectifs {
-  margin: 40px 0;
-  display: flex;
-  flex: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-/* line 216, ../sass/layout/_main.scss */
-.container-objectifs .appear {
-  text-align: center;
-  width: 400px;
-  margin-top: 25px;
-  height: 100%;
-  font-size: 16px;
-}
-/* line 223, ../sass/layout/_main.scss */
-.container-objectifs .appear h4 {
-  margin-top: 15px;
-}
-/* line 228, ../sass/layout/_main.scss */
-.container-objectifs .icon {
-  width: 100%;
-  height: 100%;
-}
-/* line 232, ../sass/layout/_main.scss */
-.container-objectifs .container-picto {
-  margin: auto;
-  height: 55px;
-  width: 55px;
-}
-
-/* line 238, ../sass/layout/_main.scss */
+/* line 209, ../sass/layout/_main.scss */
 .container-palmares {
   display: flex;
   width: 100%;
@@ -4140,12 +4106,12 @@ body.is-preload #banner > .inner {
   /* Style the front side (fallback if image is missing) */
   /* Style the back side */
 }
-/* line 245, ../sass/layout/_main.scss */
+/* line 216, ../sass/layout/_main.scss */
 .container-palmares .flag-container {
   width: 100%;
   height: auto;
 }
-/* line 249, ../sass/layout/_main.scss */
+/* line 220, ../sass/layout/_main.scss */
 .container-palmares .flip-card {
   background-color: transparent;
   width: 200px;
@@ -4153,7 +4119,7 @@ body.is-preload #banner > .inner {
   margin: 20px 20px;
   perspective: 1000px;
 }
-/* line 258, ../sass/layout/_main.scss */
+/* line 229, ../sass/layout/_main.scss */
 .container-palmares .flip-card-inner {
   position: relative;
   width: 100%;
@@ -4162,11 +4128,11 @@ body.is-preload #banner > .inner {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-/* line 268, ../sass/layout/_main.scss */
+/* line 239, ../sass/layout/_main.scss */
 .container-palmares .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-/* line 273, ../sass/layout/_main.scss */
+/* line 244, ../sass/layout/_main.scss */
 .container-palmares .flip-card-front, .container-palmares .flip-card-back {
   position: absolute;
   width: 100%;
@@ -4178,27 +4144,27 @@ body.is-preload #banner > .inner {
   visibility: visible;
   backface-visibility: hidden;
 }
-/* line 286, ../sass/layout/_main.scss */
+/* line 257, ../sass/layout/_main.scss */
 .container-palmares .flip-card-front {
   color: black;
 }
-/* line 288, ../sass/layout/_main.scss */
+/* line 259, ../sass/layout/_main.scss */
 .container-palmares .flip-card-front img {
   width: 100%;
   box-shadow: 8px 8px 12px #aaa;
 }
-/* line 295, ../sass/layout/_main.scss */
+/* line 266, ../sass/layout/_main.scss */
 .container-palmares .flip-card-back {
   color: #231F20;
   box-shadow: 8px 8px 12px #aaa;
   transform: rotateY(180deg);
 }
-/* line 299, ../sass/layout/_main.scss */
+/* line 270, ../sass/layout/_main.scss */
 .container-palmares .flip-card-back .flag-container {
   display: flex;
   flex-direction: row;
 }
-/* line 302, ../sass/layout/_main.scss */
+/* line 273, ../sass/layout/_main.scss */
 .container-palmares .flip-card-back .flag-container img {
   display: block;
   margin: 12px auto;
@@ -4206,14 +4172,14 @@ body.is-preload #banner > .inner {
   height: 20%;
 }
 
-/* line 311, ../sass/layout/_main.scss */
+/* line 282, ../sass/layout/_main.scss */
 .title-palmares {
   text-align: center;
   margin: auto;
   margin-top: 60px;
 }
 
-/* line 316, ../sass/layout/_main.scss */
+/* line 287, ../sass/layout/_main.scss */
 .container-objectifs {
   margin: 40px 0;
   display: flex;
@@ -4223,7 +4189,7 @@ body.is-preload #banner > .inner {
   flex-direction: row;
   flex-wrap: wrap;
 }
-/* line 324, ../sass/layout/_main.scss */
+/* line 295, ../sass/layout/_main.scss */
 .container-objectifs .appear {
   text-align: center;
   width: 33%;
@@ -4232,16 +4198,16 @@ body.is-preload #banner > .inner {
   padding: 0 3%;
   margin-bottom: 15px;
 }
-/* line 331, ../sass/layout/_main.scss */
+/* line 302, ../sass/layout/_main.scss */
 .container-objectifs .appear h4 {
   margin-top: 15px;
 }
-/* line 335, ../sass/layout/_main.scss */
+/* line 306, ../sass/layout/_main.scss */
 .container-objectifs .icon {
   width: 100%;
   height: 100%;
 }
-/* line 339, ../sass/layout/_main.scss */
+/* line 310, ../sass/layout/_main.scss */
 .container-objectifs .container-picto {
   margin: auto;
   height: 55px;
@@ -4249,13 +4215,13 @@ body.is-preload #banner > .inner {
   width: 55px;
 }
 
-/* line 347, ../sass/layout/_main.scss */
+/* line 318, ../sass/layout/_main.scss */
 .swiper-container {
   width: 90%;
   height: 150px;
 }
 
-/* line 351, ../sass/layout/_main.scss */
+/* line 322, ../sass/layout/_main.scss */
 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4270,23 +4236,23 @@ body.is-preload #banner > .inner {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 364, ../sass/layout/_main.scss */
+/* line 335, ../sass/layout/_main.scss */
 .swiper-slide img {
   width: 100px;
 }
 
 @media only screen and (max-width: 600px) {
-  /* line 370, ../sass/layout/_main.scss */
+  /* line 341, ../sass/layout/_main.scss */
   #main .text-chiffres {
     opacity: 1;
   }
-  /* line 373, ../sass/layout/_main.scss */
+  /* line 344, ../sass/layout/_main.scss */
   #main .transi1, #main .transi2, #main .transi3, #main .transi4, #main .transi5, #main .transi6, #main .transi7, #main .transi8, #main .transi9 {
     opacity: 1;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 380, ../sass/layout/_main.scss */
+  /* line 351, ../sass/layout/_main.scss */
   #video-fond .img-header-footer {
     background: #fff url(./../images/img-header2.jpg) center center no-repeat;
     display: block;
@@ -4295,25 +4261,25 @@ body.is-preload #banner > .inner {
     background-size: 100% auto;
   }
 
-  /* line 391, ../sass/layout/_main.scss */
+  /* line 362, ../sass/layout/_main.scss */
   #main .div-section img {
     width: 50px;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 400, ../sass/layout/_main.scss */
+  /* line 371, ../sass/layout/_main.scss */
   #main .container-palmares {
     flex-direction: column;
   }
-  /* line 402, ../sass/layout/_main.scss */
+  /* line 373, ../sass/layout/_main.scss */
   #main .container-palmares .appear {
     width: 100%;
   }
-  /* line 405, ../sass/layout/_main.scss */
+  /* line 376, ../sass/layout/_main.scss */
   #main .container-palmares .appear-2 {
     width: 100%;
   }
-  /* line 410, ../sass/layout/_main.scss */
+  /* line 381, ../sass/layout/_main.scss */
   #main .container-objectifs .appear {
     width: 50%;
   }

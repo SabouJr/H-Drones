@@ -205,36 +205,7 @@
 			}
 		}
 	}
-	.container-objectifs {
-  	margin: 40px 0;
-		display: flex;
-		flex: wrap;
-		justify-content: space-around;
-		align-items: flex-start;
-    flex-direction: row;
-		flex-wrap: wrap;
-		.appear {
-			text-align: center;
-			width: 400px;
-			margin-top: 25px;
-			height: 100%;
-			font-size: 16px;
 
-			h4 {
-				margin-top: 15px;
-			}
-
-		}
-		.icon {
-			width: 100%;
-			height: 100%;
-		}
-		.container-picto {
-			margin: auto;
-			height: 55px;
-			width: 55px;
-		}
-	}
 	.container-palmares {
 		display: flex;
 		width: 100%;
