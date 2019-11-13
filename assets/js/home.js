@@ -14,12 +14,12 @@ function openSection(idElem) {
     }
 }
 
-// // Logo HDrones video Header
-// $(window).on('load', function(){
-//     setTimeout(function(){
-//     	$(".logo-video").css("opacity", "1");
-//    }, 2000);
-// });
+// Logo HDrones video Header
+ $(window).on('load', function(){
+     setTimeout(function(){
+     	$(".logo-video").css("opacity", "1");
+    }, 2000);
+ });
 
 // Compteur chiffres
  var bloc1 = 100; // Nombre final du compteur
@@ -66,11 +66,11 @@ $(document).ready(function() {
    }
  })
 
-  // // Hide & Show video header when menu is open
-  // $("#menu-nav").on( "click", function() {
-  //   $("#video-fond").addClass("remove-video");
-  // });
-  // $("#menu .close").on( "click", function() {
-  //   $("#video-fond").removeClass("remove-video");
-  // });
+  // Hide & Show video header when menu is open
+ $("#menu-nav").on( "click", function() {
+   $("#video-fond").addClass("remove-video");
+ });
+ $("#menu .close").on( "click", function() {
+   $("#video-fond").removeClass("remove-video");
+ });
 });
