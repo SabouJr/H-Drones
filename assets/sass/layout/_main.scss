@@ -127,6 +127,23 @@
 		  width: 300px;
 			transition: 0.8s;
 		}
+		.arrow-down {
+			z-index: 10;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			width: 45px;
+			border: solid !important;
+			border-radius: 25px;
+			padding: 5px;
+			cursor: pointer;
+		}
+		a:hover {
+			color: transparent !important;
+		}
 	}
 	.remove-video {
 		display: none !important;
@@ -356,11 +373,15 @@
 					background-size: 100% auto;
 				}
 			}
-
 			#main{
 				.div-section{
 					img{
 						width: 50px;
+					}
+				}
+				.container-objectifs {
+					.appear {
+						width: 50%;
 					}
 				}
 			}
@@ -379,7 +400,7 @@
 				}
 				.container-objectifs {
 					.appear {
-						width: 50%;
+						width: 90%;
 					}
 				}
 			}
