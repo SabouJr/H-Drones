@@ -197,30 +197,100 @@
 		opacity: 0;
 		transition: 6s;
 	}
-	.container-chiffres {
-		display: flex;
-		flex: wrap;
-		justify-content: space-around;
-		align-items: flex-start;
-		flex-direction: row;
-		flex-wrap: wrap;
-		.appear {
-			border: solid 2px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			border-color: _palette(chart-yellow);
-			text-align: center;
-	    margin: 15px 0;
-			width: 300px;
-			height: 170px;
-			font-size: 16px;
-			box-shadow: 8px 8px 12px #aaa;
-			h4 {
-				margin-top: 15px;
+	.section-c {
+	height: 670px;
+	width: 100%;
+	background: #000000;
+	position: relative;
+
+	.sc-bg {
+		opacity: 0.3;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-image: url(../images/chiffres.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 100%;
+		width: 100%;
+	}
+
+	.wrap-section-c {
+		height: 100%;
+		width: 100%;
+
+		.wsc-right {
+			float: right;
+			width: 40%;
+			height: 100%;
+			background: #0082c8;
+			color: #ffffff;
+			position: relative;
+			z-index: 2;
+
+			.wscr-text {
+				padding: 38% 90px 20px 30%;
+				font-size: 28px;
 			}
-			.chiffre {
-				color: _palette(chart-grey2);
+		}
+
+
+		.wsc-left {
+			float: left;
+			width: 60%;
+			height: 100%;
+			padding: 130px 0px 130px 120px;
+			margin-right: -100px;
+			z-index: 3;
+			position: relative;
+
+			.wscl-wrap {
+			background: #ffffff;
+			display: flex;
+			height: 100%;
+			margin-right: -100px;
+			padding: 40px;
+			-webkit-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.29);
+			-moz-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.29);
+			box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.29);
+
+				.row {
+					margin-right: -15px;
+					margin-left: -15px;
+					width: 50vw;
+				}
+			.box-count {
+				height: 150px;
+				width: 100%;
+				margin-bottom: 30px;
+
+				.bcount-left {
+					background: #0082c8;
+					color: #ffffff;
+					height: 150px;
+					width: 150px;
+					float: left;
+					line-height: normal;
+					text-align: center;
+
+					.abclin {
+						.bclin {
+							margin-top: 40px;
+
+							.count-value{
+								font-size: 30px;
+							}
+						}
+					}
+				}
+
+				.bcount-right{
+					margin-left: 160px;
+				}
+				}
+			}
 			}
 		}
 	}
@@ -304,7 +374,7 @@
 			margin-top: 60px;
 	}
 	.container-objectifs {
-  	margin: 40px 0;
+  	margin: 40px 0 70px 0;
 		display: flex;
 		flex: wrap;
 		justify-content: space-around;
@@ -355,35 +425,60 @@
 			width: 100px;
 		}
 	}
-	 @media only screen and (max-width: 600px) {
+	 @media only screen and (max-width: 950px) {
 		 #main {
-	 		.text-chiffres {
-	 			opacity: 1;
-	 		}
-	 		.transi1, .transi2, .transi3, .transi4, .transi5, .transi6, .transi7, .transi8, .transi9 {
-	 			opacity: 1;
-	 		}
-	 	}
+			 .section-c {
+				 height: auto;
+				 .wrap-section-c .wsc-left .wscl-wrap {
+					 margin-right: -60px;
+					 margin-left: -60px;
+					}
+				 .wrap-section-c .wsc-left {
+					 max-width: 700px;
+					 padding: 80px 0px;
+					 float: none;
+					 margin: 0 auto;
+					 float: unset;
+					 float: none;
+					 clear: both;
+					 .wscl-wrap {
+						 display: block;
+					 }
+				 }
+				 .wrap-section-c .wsc-right .wscr-text {
+					 padding: 80px;
+					 max-width: 500px;
+					 margin: 0 auto;
+					 text-align: center;
+				 }
+				 .wrap-section-c .wsc-right {
+					 float: left;
+					 width: 100%;
+					 height: auto;
+				 }
+			 }
+ 		 }
 	 }
 		@media only screen and (max-width: 600px) {
-			#video-fond {
-				.img-header-footer {
-					background: #fff url(./../images/img-header2.jpg) center center no-repeat;
-					display: block;
-					width: 100%;
-					height: 100%;
-					background-size: 100% auto;
-				}
-			}
 			#main{
+				#video-fond {
+					.img-header-footer {
+						background: #fff url(./../images/img-header2.jpg) center center no-repeat;
+						display: block;
+						width: 100%;
+						height: 100%;
+						background-size: 100% auto;
+					}
+				}
+				.text-chiffres {
+		 			opacity: 1;
+		 		}
+		 		.transi1, .transi2, .transi3, .transi4, .transi5, .transi6, .transi7, .transi8, .transi9 {
+		 			opacity: 1;
+		 		}
 				.div-section{
 					img{
 						width: 50px;
-					}
-				}
-				.container-objectifs {
-					.appear {
-						width: 50%;
 					}
 				}
 			}
@@ -391,15 +486,6 @@
 
 		@media only screen and (max-width: 400px) {
 			#main {
-				.container-palmares {
-					flex-direction: column;
-					.appear {
-						width: 100%;
-					}
-					.appear-2 {
-						width: 100%;
-					}
-				}
 				.container-objectifs {
 					.appear {
 						width: 90%;
