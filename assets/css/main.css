@@ -4386,63 +4386,9 @@ body.is-preload #banner > .inner {
   #main .div-section img {
     width: 50px;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  /* line 383, ../sass/layout/_main.scss */
-=======
-  /* line 367, ../sass/layout/_main.scss */
->>>>>>> 20e1eedcf01684cbbba8e788a6b0d350f5777ef4
-=======
-  /* line 385, ../sass/layout/_main.scss */
->>>>>>> formulaire
-  #main .container-objectifs .appear {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 400px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  /* line 392, ../sass/layout/_main.scss */
-=======
-  /* line 394, ../sass/layout/_main.scss */
->>>>>>> formulaire
-  #main .container-palmares {
-    flex-direction: column;
-  }
-  /* line 396, ../sass/layout/_main.scss */
-  #main .container-palmares .appear {
-    width: 100%;
-  }
-  /* line 399, ../sass/layout/_main.scss */
-  #main .container-palmares .appear-2 {
-    width: 100%;
-  }
-<<<<<<< HEAD
-  /* line 402, ../sass/layout/_main.scss */
-=======
-  /* line 376, ../sass/layout/_main.scss */
-  #main .container-palmares {
-    flex-direction: column;
-  }
-  /* line 378, ../sass/layout/_main.scss */
-  #main .container-palmares .appear {
-    width: 100%;
-  }
-  /* line 381, ../sass/layout/_main.scss */
-  #main .container-palmares .appear-2 {
-    width: 100%;
-  }
-  /* line 386, ../sass/layout/_main.scss */
->>>>>>> 20e1eedcf01684cbbba8e788a6b0d350f5777ef4
-=======
-  /* line 404, ../sass/layout/_main.scss */
->>>>>>> formulaire
-=======
 }
 @media only screen and (max-width: 400px) {
   /* line 490, ../sass/layout/_main.scss */
->>>>>>> formulaire
   #main .container-objectifs .appear {
     width: 90%;
   }
