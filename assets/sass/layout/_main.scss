@@ -130,6 +130,7 @@
 		.arrow-down {
 			z-index: 10;
 			position: absolute;
+			opacity: 0;
 			left: 0;
 			right: 0;
 			top: 90%;
@@ -139,6 +140,7 @@
 			border: solid !important;
 			border-radius: 25px;
 			padding: 5px;
+			transition: 0.8s;
 			cursor: pointer;
 		}
 		a:hover {
