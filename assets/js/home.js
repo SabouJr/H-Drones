@@ -41,9 +41,15 @@ function openSection(idElem) {
 // opacity effect
 var $secteursBottom = $('.secteurs').position().top + $('.secteurs').height();
 var $palmaresBottom = $('.palmares-top').position().top + $('.palmares-top').height();
+var $objectifsBottom = $('.container-objectifs').position().top + $('.container-objectifs').height();
 $(document).ready(function() {
  $(window).scroll(function() {
    if ($( window ).width() > 600) {
+     if($(window).scrollTop() >= $objectifsBottom) {
+       $('.transi1').css("opacity", "1");
+       $('.transi2').css("opacity", "1");
+       $('.transi3').css("opacity", "1");
+     }
      if($(window).scrollTop() >= $palmaresBottom - 400) {
        $('.transi4').css("opacity", "1");
        $('.transi5').css("opacity", "1");
