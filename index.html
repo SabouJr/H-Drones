@@ -9,8 +9,12 @@
 		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload home">
-
+	<body class="home">
+		<div id="loader">
+				<div class="img-loader">
+					<img src="./assets/images/loading.gif" alt="Loading ...">
+				</div>
+    </div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Header -->
@@ -593,8 +597,6 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 										</div>
 									</div>
 						    </div>
-						    <!-- Add Pagination -->
-						    <div class="swiper-pagination"></div>
 						  </div>
 						</section>
 							<section id="two">
@@ -751,7 +753,7 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 					slidesPerView: 4,
 					infinite: true,
 					autoplay: {
-						delay: 2000,
+						delay: 1500,
 					},
 					coverflowEffect: {
 						slideShadows: true,
@@ -766,16 +768,20 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 					}
 				});
 				var swiper2 = new Swiper('.test-palmares .swiper-container', {
-		      slidesPerView: 3,
-		      spaceBetween: 30,
-		      pagination: {
-		        el: '.swiper-pagination',
-		        clickable: true,
-		      },
+					initialSlide: 10,
+		      slidesPerView: 1,
+					spaceBetween: 0,
+					freeMode: true,
+					grabCursor: true,
 					breakpoints: {
-				    900: {
+				    480: {
+				      slidesPerView: 3,
+							spaceBetween: 25,
+				    },
+				    640: {
 				      slidesPerView: 5,
-				    }
+							spaceBetween: 30,
+				    },
 				  }
 		    })
 		  </script>

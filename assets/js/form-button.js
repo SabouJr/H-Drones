@@ -8,3 +8,8 @@ $('.order').click(function(e) {
         }, 6500);
     }
 });
+
+// Loader
+ $(window).on('load', function(){
+   $("#loader").fadeOut("slow");
+ });

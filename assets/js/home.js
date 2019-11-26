@@ -1,9 +1,3 @@
-//lazyload
-// $(document).ready(function() {
-//   $("img").unveil(100);
-// });
-
-
 // Pop up Secteurs d'activité
 function openSection(idElem) {
     var $elem = $("#"+idElem);
@@ -75,7 +69,6 @@ $(document).ready(function() {
 // Scroll Effect
 $(document).ready(function() {
 	$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-    console.log("test");
 		var page = $(this).attr('href'); // Page cible
 		var speed = 750; // Durée de l'animation (en ms)
 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go

@@ -319,6 +319,26 @@ hr.major {
   text-align: right;
 }
 
+/* line 1, ../sass/components/_loader.scss */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 13, ../sass/components/_loader.scss */
+#loader .img-loader img {
+  display: block;
+  width: 90px;
+  height: 90px;
+}
+
 /* Row */
 /* line 9, ../sass/components/_row.scss */
 .row {
@@ -3393,7 +3413,7 @@ html {
   text-transform: uppercase;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 99;
 }
 /* line 43, ../sass/layout/_header.scss */
 #header .logo {
@@ -4196,7 +4216,7 @@ body.is-preload #banner > .inner {
   background-color: transparent;
   width: 200px;
   height: 200px;
-  margin: 20px 20px;
+  margin: 20px 0;
   perspective: 1000px;
 }
 
@@ -4313,8 +4333,9 @@ body.is-preload #banner > .inner {
 .test-palmares .swiper-container {
   width: 100%;
   height: 100%;
+  padding: 0 70px;
 }
-/* line 410, ../sass/layout/_main.scss */
+/* line 411, ../sass/layout/_main.scss */
 .test-palmares .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -4333,17 +4354,17 @@ body.is-preload #banner > .inner {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 428, ../sass/layout/_main.scss */
+/* line 429, ../sass/layout/_main.scss */
 .test-palmares .swiper-pagination {
   bottom: -8px !important;
 }
 
-/* line 433, ../sass/layout/_main.scss */
+/* line 434, ../sass/layout/_main.scss */
 .confiance-bloc .swiper-container {
   width: 90%;
   height: 150px;
 }
-/* line 436, ../sass/layout/_main.scss */
+/* line 437, ../sass/layout/_main.scss */
 .confiance-bloc .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4358,22 +4379,22 @@ body.is-preload #banner > .inner {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 449, ../sass/layout/_main.scss */
+/* line 450, ../sass/layout/_main.scss */
 .confiance-bloc .swiper-container .swiper-slide img {
   width: 100px;
 }
 
 @media only screen and (max-width: 950px) {
-  /* line 457, ../sass/layout/_main.scss */
+  /* line 458, ../sass/layout/_main.scss */
   #main .section-c {
     height: auto;
   }
-  /* line 459, ../sass/layout/_main.scss */
+  /* line 460, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-left .wscl-wrap {
     margin-right: -60px;
     margin-left: -60px;
   }
-  /* line 463, ../sass/layout/_main.scss */
+  /* line 464, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-left {
     max-width: 700px;
     padding: 80px 0px;
@@ -4383,18 +4404,18 @@ body.is-preload #banner > .inner {
     float: none;
     clear: both;
   }
-  /* line 471, ../sass/layout/_main.scss */
+  /* line 472, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-left .wscl-wrap {
     display: block;
   }
-  /* line 475, ../sass/layout/_main.scss */
+  /* line 476, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-right .wscr-text {
     padding: 80px;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
   }
-  /* line 481, ../sass/layout/_main.scss */
+  /* line 482, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-right {
     float: left;
     width: 100%;
@@ -4402,7 +4423,7 @@ body.is-preload #banner > .inner {
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 492, ../sass/layout/_main.scss */
+  /* line 493, ../sass/layout/_main.scss */
   #main #video-fond .img-header-footer {
     background: #fff url(./../images/img-header2.jpg) center center no-repeat;
     display: block;
@@ -4410,21 +4431,21 @@ body.is-preload #banner > .inner {
     height: 100%;
     background-size: 100% auto;
   }
-  /* line 500, ../sass/layout/_main.scss */
+  /* line 501, ../sass/layout/_main.scss */
   #main .text-chiffres {
     opacity: 1;
   }
-  /* line 503, ../sass/layout/_main.scss */
+  /* line 504, ../sass/layout/_main.scss */
   #main .transi1, #main .transi2, #main .transi3, #main .transi4, #main .transi5, #main .transi6, #main .transi7, #main .transi8, #main .transi9 {
     opacity: 1;
   }
-  /* line 507, ../sass/layout/_main.scss */
+  /* line 508, ../sass/layout/_main.scss */
   #main .div-section img {
     width: 50px;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 517, ../sass/layout/_main.scss */
+  /* line 518, ../sass/layout/_main.scss */
   #main .container-objectifs .appear {
     width: 90%;
   }

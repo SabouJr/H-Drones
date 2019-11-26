@@ -38,7 +38,7 @@
 		text-transform: uppercase;
 		top: 0;
 		width: 100%;
-		z-index: _misc(z-index-base);
+		z-index: 99;
 
 		.logo {
 			display: block;
