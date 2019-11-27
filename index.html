@@ -101,23 +101,20 @@ drones. Nous vous proposons notre solution pour la livraison du dernier kilomèt
 enjeux et aux problématiques d'engorgement des centres villes.</p>
 								</div>
 							</article>
-							<article onclick="openSection('section-logistique')">
+                            <article onclick="openSection('section-formation')">
 								<span class="image">
-									<img src="./assets/images/logistique.jpg" alt="Logistique" />
+									<img src="./assets/images/luxe.jpg" alt="Formation" />
 								</span>
-								<header class="major">
-									<h3>Logistique</h3>
-								</header>
-								<div id="section-logistique" class="div-section">
-									<a class="close close-section">Close</a>
-									<img src="./assets/images/box.png" alt="picto_pharmacy">
-									<h1>Logistique</h1>
-									<p>Intégrez nos drones dans les centres logistiques et sites industriels dans le but de fluidifier les
-déplacements et d’améliorer la qualité de votre service.<br/><br/>
-Hdrones vous propose une solution optimale pour soutenir vos moyens de livraisons. Via
-l’optimisation de vos flux de marchandise grâce à nos drones. </p>
-								</div>
-							</article>
+                                <header class="major">
+                                    <h3>Luxe</h3>
+                                </header>
+                                <div id="section-formation" class="div-section">
+                                    <a class="close close-section">Close</a>
+                                    <img src="./assets/images/diamond.png" alt="picto_pharmacy">
+                                    <h1>Luxe</h1>
+                                    <p>Chez Hdrones nous réalisons vos rêves les plus fous. Privatisez notre service de livraison par drones pour rendre votre événement inoubliable.</p>
+                                </div>
+                            </article>
 							<article onclick="openSection('section-humanitaire')">
 								<span class="image">
 									<img src="./assets/images/humanitaire.jpg" alt="Humanitaire" />
@@ -134,22 +131,23 @@ disposition nos services de livraison aux causes humanitaires. Nous souhaitons s
 organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer à travers le monde.</p>
 								</div>
 							</article>
-							<article onclick="openSection('section-formation')">
+                            <article onclick="openSection('section-logistique')">
 								<span class="image">
-									<img src="./assets/images/formation.jpg" alt="Formation" />
+									<img src="./assets/images/logistique.jpg" alt="Logistique" />
 								</span>
-								<header class="major">
-									<h3>Formation</h3>
-								</header>
-								<div id="section-formation" class="div-section">
-									<a class="close close-section">Close</a>
-									<img src="./assets/images/pilot.png" alt="picto_pharmacy">
-									<h1>Formation</h1>
-									<p>Venez vous former avec notre équipe au métier de télépilote drone dans de multiples domaines florissant :
-
-										Audiovisuel. Inspection & BTP, Sécurité & Protection, Photogrammétrie, ...</p>
-								</div>
-							</article>
+                                <header class="major">
+                                    <h3>Logistique</h3>
+                                </header>
+                                <div id="section-logistique" class="div-section">
+                                    <a class="close close-section">Close</a>
+                                    <img src="./assets/images/box.png" alt="picto_pharmacy">
+                                    <h1>Logistique</h1>
+                                    <p>Intégrez nos drones dans les centres logistiques et sites industriels dans le but de fluidifier les
+                                        déplacements et d’améliorer la qualité de votre service.<br/><br/>
+                                        Hdrones vous propose une solution optimale pour soutenir vos moyens de livraisons. Via
+                                        l’optimisation de vos flux de marchandise grâce à nos drones. </p>
+                                </div>
+                            </article>
 						</section>
 						<section class="Objectifs">
 							<header class="major title-palmares">
@@ -597,7 +595,25 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 										</div>
 									</div>
 						    </div>
+						    <!-- Add Arrows -->
+						    <div class="swiper-button-next"></div>
+						    <div class="swiper-button-prev"></div>
 						  </div>
+						</section>
+						<!--	Formation -->
+						<section class="Formations">
+							<section class="Formation-content">
+								<div class="Formation-content-image">
+									<img src="assets/images/formation.jpg" alt="formation_image">
+								</div>
+								<div class="Formation-content-text">
+									<p>Venez vous former avec notre équipe au métier de télépilote drone dans de multiples domaines florissant :<br/>
+										Audiovisuel. Inspection & BTP, Sécurité & Protection, Photogrammétrie, ...</p>
+									<div class="Formation-content-button">
+									<button><a href="formation.html">Découvrir plus</a></button>
+									</div>
+								</div>
+							</section>
 						</section>
 							<section id="two">
 								<div class="inner confiance-bloc">
@@ -773,15 +789,27 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 					spaceBetween: 0,
 					freeMode: true,
 					grabCursor: true,
+					navigation: {
+		        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		      },
 					breakpoints: {
 				    480: {
-				      slidesPerView: 3,
-							spaceBetween: 25,
+				      slidesPerView: 2,
+							spaceBetween: 20,
 				    },
 				    640: {
-				      slidesPerView: 5,
-							spaceBetween: 30,
+				      slidesPerView: 3,
+							spaceBetween: 20,
 				    },
+						768: {
+		          slidesPerView: 3,
+		          spaceBetween: 20,
+		        },
+						1024: {
+		          slidesPerView: 5,
+		          spaceBetween: 20,
+		        },
 				  }
 		    })
 		  </script>

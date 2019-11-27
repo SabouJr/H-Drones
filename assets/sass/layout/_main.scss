@@ -408,6 +408,9 @@
 	      height: 100%;
 				padding: 0 70px;
 	    }
+			.swiper-button-next, .swiper-button-prev {
+				color: _palette(chart-black);
+			}
 	    .swiper-slide {
 	      text-align: center;
 	      font-size: 18px;
@@ -453,6 +456,37 @@
 			}
 		}
 	}
+	// Formation //
+	.Formations {
+    margin: 150px 0 50px 0;
+		.Formation-content {
+			display: flex;
+			.Formation-content-image {
+				width: 80%;
+				img {
+					width: 100%;
+				}
+			}
+			.Formation-content-text {
+		    padding: 12% 40px 0 39px;
+				text-align: center;
+				.Formation-content-button {
+					padding-top: 50px;
+					a {
+						height: 40px;
+						button {
+							color: black;
+							border: 1px solid;
+						}
+					}
+					button {
+						color: black;
+						border: 1px solid;
+					}
+				}
+			}
+		}
+	}
 	 @media only screen and (max-width: 950px) {
 		 #main {
 			 .section-c {
@@ -485,6 +519,18 @@
 					 height: auto;
 				 }
 			 }
+			 .Formations {
+				 .Formation-content {
+					 display: block;
+					.Formation-content-image {
+						width: 90%;
+						 margin: auto;
+					 }
+					 .Formation-content-text {
+				     padding: 5% 40px 0 39px;
+					 }
+				 }
+			 }
  		 }
 	 }
 		@media only screen and (max-width: 600px) {
@@ -509,6 +555,16 @@
 						width: 50px;
 					}
 				}
+				.Formations {
+					.Formation-content {
+						.Formation-content-image {
+	 						width: 100%;
+	 					 }
+						.Formation-content-text {
+							padding: 50px 40px 0 40px;
+						}
+					}
+				}
 			}
 		}
 
@@ -517,6 +573,31 @@
 				.container-objectifs {
 					.appear {
 						width: 90%;
+					}
+				}
+			}
+		}
+		@media only screen and (max-width: 420px) {
+			#main {
+				.container-four {
+					.appear {
+						text-align: center;
+						width: 40%;
+						margin-top: 25px;
+						height: 100%;
+						font-size: 16px;
+						padding-left: 25px;
+						padding-right: 25px;
+					}
+				}
+				.container-objectifs {
+					.appear {
+						text-align: center;
+						width: 85%;
+						height: auto;
+						font-size: 16px;
+						padding: 0 3%;
+						margin-bottom: 15px;
 					}
 				}
 			}
