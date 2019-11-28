@@ -29,16 +29,27 @@ function openSection(idElem) {
       setTimeout(countdown1, delta1);
    }
  }
- setTimeout(function(){  setTimeout(countdown1, delta1); }, 5000);
+ setTimeout(function(){  setTimeout(countdown1, delta1); }, 7000);
 
 
 // opacity effect
+var $videoBottom = $('.section-video').position().top + $('.section-video').height();
 var $secteursBottom = $('.secteurs').position().top + $('.secteurs').height();
 var $palmaresBottom = $('.palmares-top').position().top + $('.palmares-top').height();
 var $objectifsBottom = $('.container-objectifs').position().top + $('.container-objectifs').height();
 $(document).ready(function() {
  $(window).scroll(function() {
    if ($( window ).width() > 600) {
+     if($(window).scrollTop() >= $secteursBottom - 50) {
+       $('.transi10').css("opacity", "1");
+       $('.transi11').css("opacity", "1");
+       $('.transi12').css("opacity", "1");
+     }
+     if($(window).scrollTop() >= $videoBottom) {
+       $('.transi7').css("opacity", "1");
+       $('.transi8').css("opacity", "1");
+       $('.transi9').css("opacity", "1");
+     }
      if($(window).scrollTop() >= $objectifsBottom) {
        $('.transi1').css("opacity", "1");
        $('.transi2').css("opacity", "1");
@@ -48,11 +59,6 @@ $(document).ready(function() {
        $('.transi4').css("opacity", "1");
        $('.transi5').css("opacity", "1");
        $('.transi6').css("opacity", "1");
-     }
-     if($(window).scrollTop() >= $secteursBottom) {
-       $('.transi7').css("opacity", "1");
-       $('.transi8').css("opacity", "1");
-       $('.transi9').css("opacity", "1");
      }
    }
  })

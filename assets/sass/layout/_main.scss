@@ -20,8 +20,6 @@
 		}
 
 		> * {
-			border-top: solid 1px _palette(border);
-
 			&:first-child {
 				border-top: 0;
 			}
@@ -94,13 +92,6 @@
 				left: 10%;
 			}
 		}
-	}
-	.video-formation {
-		max-width: 950px;
-		width: 100%;
-    margin: 50px 0 60px 0;
-		border-top: solid 2px _palette(chart-yellow);
-		border-bottom: solid 2px _palette(chart-yellow);
 	}
 	#video-fond {
 		width: 100vw;
@@ -181,15 +172,15 @@
 		opacity: 0;
 		transition: 1.2s;
 	}
-	.transi1, .transi4, .transi7 {
+	.transi1, .transi4, .transi7, .transi10 {
 		opacity: 0;
 		transition: 1s;
 	}
-	.transi2, .transi5, .transi8 {
+	.transi2, .transi5, .transi8, .transi11 {
 		opacity: 0;
 		transition: 3s;
 	}
-	.transi3, .transi6, .transi9 {
+	.transi3, .transi6, .transi9, .transi12 {
 		opacity: 0;
 		transition: 6s;
 	}
@@ -456,9 +447,76 @@
 			}
 		}
 	}
+	.container-four{
+		margin-bottom: 80px;
+		display: flex;
+		flex: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		.appear {
+			text-align: center;
+			width: 25%;
+			margin-top: 25px;
+			height: 100%;
+			font-size: 16px;
+
+			h4 {
+				margin-top: 15px;
+			}
+
+		}
+		.text-vision {
+			padding: 30px 9% 50px 9% !important;
+		}
+		.icon {
+			width: 100%;
+			height: 100%;
+		}
+		.container-picto {
+			margin: auto;
+			height: 55px;
+			margin-bottom: 15px;
+			width: 55px;
+		}
+	}
+
+	.section-video {
+		height: 615px;
+		width: 100%;
+		background: #000000;
+		position: relative;
+		.sc-bg {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0.8;
+			top: 0px;
+			left: 0px;
+			background-image: url(../images/fond-drone-video.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			height: 100%;
+			width: 100%;
+			text-align: center;
+			.video-formation {
+				max-width: 950px;
+				width: 100%;
+			}
+		}
+	}
 	// Formation //
 	.Formations {
     margin: 150px 0 50px 0;
+		.formation-title {
+			margin: auto;
+			margin-bottom: 50px;
+		}
 		.Formation-content {
 			display: flex;
 			.Formation-content-image {
@@ -489,6 +547,15 @@
 	}
 	 @media only screen and (max-width: 950px) {
 		 #main {
+			 .container-four {
+				 .appear {
+					 text-align: center;
+					 width: 40%;
+					 margin-top: 25px;
+					 height: 100%;
+					 font-size: 16px;
+				 }
+			 }
 			 .section-c {
 				 height: auto;
 				 .wrap-section-c .wsc-left .wscl-wrap {
@@ -547,7 +614,7 @@
 				.text-chiffres {
 		 			opacity: 1;
 		 		}
-		 		.transi1, .transi2, .transi3, .transi4, .transi5, .transi6, .transi7, .transi8, .transi9 {
+		 		.transi1, .transi2, .transi3, .transi4, .transi5, .transi6, .transi7, .transi8, .transi9, .transi10, .transi11, .transi12 {
 		 			opacity: 1;
 		 		}
 				.div-section{
@@ -582,7 +649,7 @@
 				.container-four {
 					.appear {
 						text-align: center;
-						width: 40%;
+						width: 90%;
 						margin-top: 25px;
 						height: 100%;
 						font-size: 16px;
