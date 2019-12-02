@@ -18,10 +18,20 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header" class="alt nav-down">
 						<a href="index.html" class="logo"><img src="./assets/images/logo.png" alt="HDRONES"></a>
+						<div class="nav-secteurs">
+							<ul>
+								<li><a href="#secteurs-part" onclick="openSection('section-pharmaceutique')">Pharmaceutique</a></li>
+								<li><a href="#secteurs-part" onclick="openSection('section-restauration')">Restauration</a></li>
+								<li><a href="#secteurs-part" onclick="openSection('section-distribution')">Grande distribution</a></li>
+								<li><a href="#secteurs-part" onclick="openSection('section-formation')">Particuliers</a></li>
+								<li><a href="#secteurs-part" onclick="openSection('section-humanitaire')">Humanitaire</a></li>
+								<li><a href="#secteurs-part" onclick="openSection('section-logistique')">Logistique</a></li>
+							</ul>
+						</div>
 						<nav>
-							<a id="menu-nav" href="#menu">Menu</a>
+							<a id="menu-nav" href="#menu"></a>
 						</nav>
 					</header>
 
@@ -29,7 +39,12 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
+							<li><a href="#secteurs-part">Secteurs d'activité</a></li>
+							<li><a href="#vision">Vision</a></li>
+							<li><a href="#objectifs">Objectifs</a></li>
+							<li><a href="#concours">Concours</a></li>
 							<li><a href="formation.html">Formation</a></li>
+							<li><a href="#contact">Contacts</a></li>
 						</ul>
 						<ul class="icons">
 							<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
@@ -48,7 +63,7 @@
 							<!-- <div class="img-header-footer"></div> -->
 						  <a href="#secteurs-part" class="js-scrollTo"><img class="arrow-down" src="./assets/images/arrow-down.png"></a>
 						  <video autoplay loop muted playsinline>
-						    <source type="video/mp4" src="videos/video-header.m4v" media="(orientation: landscape)">
+						    <source controls="true" type="video/mp4" src="videos/video-header.mp4" media="(orientation: landscape)">
 						  </video>
 						</div>
 							<!-- <div class="img-header-footer"></div> -->
@@ -149,7 +164,7 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
                             </article>
 						</section>
 						<!--	Vision -->
-						<section class="container-four">
+						<section id="vision" class="container-four">
 							<header class="major title-palmares">
 								<h1>Notre vision</h1>
 							</header>
@@ -194,7 +209,7 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 								<iframe class="video-formation" width="1280" height="497" src="https://www.youtube.com/embed/X7ROGDcNV4I?controls=0&showinfo=0&rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" ></iframe>
 							</div>
 						</section>
-						<section class="Objectifs">
+						<section id="objectifs" class="Objectifs">
 							<header class="major title-palmares">
 								<h1>Nos Objectifs</h1>
 							</header>
@@ -324,7 +339,7 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 							</div>
 							<div class="sc-bg"></div>
 						</section>
-						<section class="palmares-top">
+						<section id="concours" class="palmares-top">
 							<header class="major title-palmares">
 								<h1>Nos Récompenses</h1>
 							</header>

@@ -5,6 +5,9 @@
 ///
 
 /* Main */
+	html {
+	  scroll-behavior: smooth;
+	}
 	#main {
 		background-color: _palette(bg-alt);
 		.inner {

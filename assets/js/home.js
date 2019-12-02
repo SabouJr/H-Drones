@@ -70,9 +70,12 @@ $(document).ready(function() {
  $("#menu .close").on( "click", function() {
    $("#video-fond").removeClass("remove-video");
  });
+ $("#menu li a").on( "click", function() {
+   $("#video-fond").removeClass("remove-video");
+ });
 });
 
-// Scroll Effect
+// Scroll Effect Arrow
 $(document).ready(function() {
 	$('.js-scrollTo').on('click', function() { // Au clic sur un élément
 		var page = $(this).attr('href'); // Page cible

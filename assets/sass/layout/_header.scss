@@ -10,9 +10,12 @@
 		0% { top: -4em; opacity: 0; }
 		100% { top: 0; opacity: 1; }
 	}
-
+	.nav-up {
+    top: -55px !important;
+	}
 	.hdrones {
 		#header {
+	    opacity: 0.9;
 			background-color: transparent;
 			box-shadow: none;
 		}
@@ -26,10 +29,12 @@
 	}
 	#header {
 		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 		align-items: center;
 		cursor: default;
 		font-weight: _font(weight-bold);
-		height: 3.25em;
+		height: 50px;
 		left: 0;
 		letter-spacing: _font(letter-spacing-alt);
 		line-height: 3.25em;
@@ -38,16 +43,37 @@
 		text-transform: uppercase;
 		top: 0;
 		width: 100%;
+		transition: top 0.2s ease-in-out !important;
 		z-index: 99;
-
+		#menu-nav {
+			font-size: 14px;
+		}
+		.nav-secteurs {
+			color: black;
+    	font-size: 11px;
+			width: 100%;
+			ul {
+				width: 100%;
+				flex-direction: row;
+				justify-content: space-around;
+				display: flex;
+				margin: 0;
+				li {
+			    list-style-type: none;
+					a {
+						border: 0;
+					}
+				}
+			}
+		}
 		.logo {
 			display: block;
-			padding: 0 1.5em;
+			margin-left: 15px;
 			border: 0;
 			img {
 				display: block;
 		    height: auto;
-		    width: 120px;
+		    width: 90px;
 			}
 			strong {
 				@include vendor('transition', (
@@ -258,6 +284,20 @@
 						}
 					}
 				}
+			}
+		}
+	}
+	@media only screen and (max-width: 1150px) {
+		#header {
+			.nav-secteurs ul li {
+				font-size: 10px;
+			}
+		}
+	}
+	@media only screen and (max-width: 1105px) {
+		#header {
+			.nav-secteurs {
+				display: none;
 			}
 		}
 	}
