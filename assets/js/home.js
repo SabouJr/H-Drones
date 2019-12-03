@@ -17,19 +17,18 @@ function openSection(idElem) {
  });
 
 // Compteur chiffres
- var bloc1 = 100; // Nombre final du compteur
- var cpt = 0; // Initialisation du compteur
- var duree = 0.5; // Durée en seconde pendant laquel le compteur ira de 0 à 15
- var delta1 = Math.ceil((duree * 1000) / bloc1);
- var node1 =  document.getElementById("compteur1"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
-
+  var bloc1 = 100; // Nombre final du compteur
+  var cpt = 0; // Initialisation du compteur
+  var duree = 0.5; // Durée en seconde pendant laquel le compteur ira de 0 à 15
+  var delta1 = Math.ceil((duree * 1000) / bloc1);
+  var node1 =  document.getElementById("compteur1"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
  function countdown1() {
-   node1.innerHTML = ++cpt;
-   if( cpt < bloc1 ) { // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
-      setTimeout(countdown1, delta1);
-   }
- }
- setTimeout(function(){  setTimeout(countdown1, delta1); }, 7000);
+    node1.innerHTML = ++cpt;
+    if( cpt < bloc1 ) { // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
+       setTimeout(countdown1, delta1);
+    }
+  }
+  setTimeout(function(){  setTimeout(countdown1, delta1); }, 7000);
 
 
 // opacity effect
@@ -38,8 +37,8 @@ var $secteursBottom = $('.secteurs').position().top + $('.secteurs').height();
 var $palmaresBottom = $('.palmares-top').position().top + $('.palmares-top').height();
 var $objectifsBottom = $('.container-objectifs').position().top + $('.container-objectifs').height();
 $(document).ready(function() {
- $(window).scroll(function() {
-   if ($( window ).width() > 600) {
+  if ($(window).width() > 600) {
+    $(window).scroll(function() {
      if($(window).scrollTop() >= $secteursBottom - 50) {
        $('.transi10').css("opacity", "1");
        $('.transi11').css("opacity", "1");
@@ -60,8 +59,8 @@ $(document).ready(function() {
        $('.transi5').css("opacity", "1");
        $('.transi6').css("opacity", "1");
      }
-   }
- })
+   });
+ }
 
   // Hide & Show video header when menu is open
  $("#menu-nav").on( "click", function() {
