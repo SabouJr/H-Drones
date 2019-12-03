@@ -3,10 +3,10 @@ $(function() {
     var $form = $('#ajax-contact');
     // Get the messages div.
     var $formMessages = $('#form-messages');
+    var $button = $('.order');
 
     // Set up an event listener for the contact form.
     $form.submit(function(event) {
-        console.log("test");
         // Stop the browser from submitting the form.
         event.preventDefault();
 
@@ -32,11 +32,10 @@ $(function() {
             $('#message').val('');
 
             // Animation Button
-            let button = $(this);
-            if(!button.hasClass('animate')) {
-                button.addClass('animate');
+            if(!$button.hasClass('animate')) {
+                $button.addClass('animate');
                 setTimeout(() => {
-                button.removeClass('animate');
+                $button.removeClass('animate');
                 }, 6500);
             }
         })
