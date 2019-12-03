@@ -2123,6 +2123,24 @@ input[type="radio"] + label:before {
   opacity: 1.0;
 }
 
+/* line 239, ../sass/components/_form.scss */
+.submit-button {
+  position: absolute;
+  border: solid 1px #000000;
+  box-shadow: 8px 8px 12px #aaa;
+  background: transparent;
+  /* position: relative; */
+  height: 63px;
+  width: 220px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 32px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  transition: transform .3s ease;
+  z-index: 1;
+}
+
 /* Box */
 /* line 9, ../sass/components/_box.scss */
 .box {

@@ -748,23 +748,22 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 							<section class="split">
 								<p>Besoin d'informations ? Notre équipe est à votre écoute !</p>
 								<section>
-									<form method="post" action="#">
+									<form id="ajax-contact" method="post" action="mailer.php">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Nom</label>
-												<input placeholder="Entrez votre Nom" type="text" name="name" id="name" />
+												<input placeholder="Entrez votre Nom" type="text" name="name" id="name" required/>
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input placeholder="Entrez votre Email" type="text" name="email" id="email" />
+												<input placeholder="Entrez votre Email" type="text" name="email" id="email" required/>
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea placeholder="Entrez votre message" name="message" id="message" rows="6"></textarea>
+												<textarea placeholder="Entrez votre message" name="message" id="message" rows="6" required></textarea>
 											</div>
 										</div>
-										<ul class="actions">
-											<li><button class="order"><span class="default">Envoyer</span><span class="success">Ok
+										<button type="submit" class="order"><span class="default">Envoyer</span><span class="success">Ok
 											    <svg viewbox="0 0 12 10">
 											      <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 											    </svg></span>
@@ -795,9 +794,9 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 											    <path d="M13,2 C12.4477153,2 12,1.55228475 12,1 C12,0.44771525 12.4477153,0 13,0 C13.5522847,0 21,0.44771525 21,1 C21,1.55228475 13.5522847,2 13,2 Z"></path>
 											    <path d="M8,2 C7.44771525,2 0,1.55228475 0,1 C0,0.44771525 7.44771525,0 8,0 C8.55228475,0 9,0.44771525 9,1 C9,1.55228475 8.55228475,2 8,2 Z"></path>
 											  </symbol>
-											</svg></li>
-										</ul>
+											</svg>
 									</form>
+									<div id="form-message"></div>
 								</section>
 							</section>
 						</div>
@@ -819,6 +818,7 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/app.js"></script>
 			<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
