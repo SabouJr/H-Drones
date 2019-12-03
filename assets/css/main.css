@@ -1951,7 +1951,7 @@ textarea {
   appearance: none;
   background: rgba(212, 212, 255, 0.035);
   border: solid 1px #ecf0f1;
-  box-shadow: 8px 8px 12px #aaa;
+  box-shadow: 8px 8px 12px #aaa !important;
   border-radius: 0;
   color: inherit;
   display: block;

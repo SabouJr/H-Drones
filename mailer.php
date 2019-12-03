@@ -18,14 +18,14 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "sabourinclement@hotmail.fr";
+        $recipient = "lenny.demu@gmail.com";
 
         // Set the email subject.
-        $subject = "New contact from $name";
+        $subject = "Message de h-drones.com";
 
         // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
+        $email_content = "Name: $name\r\n";
+        $email_content .= "Email: $email\r\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
