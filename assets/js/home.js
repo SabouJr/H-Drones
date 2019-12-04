@@ -5,6 +5,9 @@ function openSection(idElem) {
       $("#"+idElem).removeClass("open-section");
     } else {
       $("#"+idElem).addClass("open-section");
+      $( "div.div-section" ).each(function(index) {
+        $(this).not("#"+idElem).removeClass("open-section");
+      });
     }
 }
 
