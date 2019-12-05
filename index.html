@@ -60,7 +60,7 @@
 					<div id="main">
 						<div id="video-fond" class="video-fond">
 							<!-- Swiper -->
-							<div class="swiper-container3">
+							<div class="swiper-container">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<h1>Service de livraison par drone</h1>
@@ -80,7 +80,7 @@
 									</div>
 								</div>
 							</div>
-						
+
 							<img class="logo-video" src="./assets/images/logo-blanc.png">
 							<!-- <div class="img-header-footer"></div> -->
 						  <a href="#secteurs-part" class="js-scrollTo"><img class="arrow-down" src="./assets/images/arrow-down.png"></a>
@@ -867,6 +867,16 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 			<script src="assets/js/home.js"></script>
 			<script src="assets/js/nav.js"></script>
 			<script>
+				var swiper = new Swiper('.video-fond .swiper-container', {
+					speed: 2000,
+					spaceBetween: 30,
+					centeredSlides: true,
+					loop: true,
+					autoplay: {
+						delay: 4500,
+						disableOnInteraction: false,
+					}
+				});
 				var swiper2 = new Swiper('.test-palmares .swiper-container', {
 					initialSlide: 10,
 		      slidesPerView: 1,
@@ -896,18 +906,5 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 				  }
 		    })
 		  </script>
-		<!-- Initialize Swiper -->
-		<script>
-			var swiper = new Swiper('.video-fond .swiper-container3', {
-				speed: 2000,
-				spaceBetween: 30,
-				centeredSlides: true,
-				loop: true,
-				autoplay: {
-					delay: 4500,
-					disableOnInteraction: false,
-				}
-			});
-		</script>
 	</body>
 </html>

@@ -15,7 +15,7 @@ function openSection(idElem) {
  $(window).on('load', function(){
      setTimeout(function(){
        $(".logo-video").css("opacity", "1");
-       $(".swiper-container3").css("opacity", "1");
+       $(".video-fond .swiper-container").css("opacity", "1");
       $(".arrow-down").css("opacity", "1");
     }, 2000);
  });
