@@ -58,12 +58,34 @@
 
 				<!-- Main -->
 					<div id="main">
-						<div id="video-fond">
+						<div id="video-fond" class="video-fond">
+							<!-- Swiper -->
+							<div class="swiper-container3">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<h1>Service de livraison par drone</h1>
+										<p>Proposez à votre clientèle l'acheminement de leurs produits directement à domicile</p>
+									</div>
+									<div class="swiper-slide">
+										<h1>Service scalable</h1>
+										<p>Utilisez nos services pour plusieurs domaines d'activités</p>
+									</div>
+									<div class="swiper-slide">
+										<h1>Expérience inédit et disruptive</h1>
+										<p>Mettez à disposition de votre clientèle un service de livraison novateur</p>
+									</div>
+									<div class="swiper-slide">
+										<h1>INNOVATION REBORN</h1>
+										<p>Hdrones, pionnier de l'acheminement de marchandises par drones</p>
+									</div>
+								</div>
+							</div>
+						
 							<img class="logo-video" src="./assets/images/logo-blanc.png">
 							<!-- <div class="img-header-footer"></div> -->
 						  <a href="#secteurs-part" class="js-scrollTo"><img class="arrow-down" src="./assets/images/arrow-down.png"></a>
 						  <video autoplay loop muted playsinline>
-						    <source controls="true" type="video/mp4" src="videos/video-header.mp4" media="(orientation: landscape)">
+						    <source controls="true" type="video/mp4" src="videos/video-header2.m4v" media="(orientation: landscape)">
 						  </video>
 						</div>
 							<!-- <div class="img-header-footer"></div> -->
@@ -874,5 +896,18 @@ organismes qui sont en adéquations aux de valeurs de Hdrones, soit : contribuer
 				  }
 		    })
 		  </script>
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.video-fond .swiper-container3', {
+				speed: 2000,
+				spaceBetween: 30,
+				centeredSlides: true,
+				loop: true,
+				autoplay: {
+					delay: 4500,
+					disableOnInteraction: false,
+				}
+			});
+		</script>
 	</body>
 </html>

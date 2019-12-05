@@ -4672,8 +4672,57 @@ body.is-preload #banner > .inner {
   text-align: center;
 }
 
+/* line 651, ../sass/layout/_main.scss */
+.video-fond .swiper-container3 {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+/* line 656, ../sass/layout/_main.scss */
+.video-fond .swiper-container3 .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+/* line 665, ../sass/layout/_main.scss */
+.video-fond .swiper-container3 .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  color: white;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 686, ../sass/layout/_main.scss */
+.video-fond .swiper-container3 .swiper-wrapper .swiper-slide h1 {
+  color: #fff;
+  padding-top: 200px;
+  margin: 0 0 0 0;
+}
+/* line 692, ../sass/layout/_main.scss */
+.video-fond .swiper-container3 .swiper-wrapper .swiper-slide p {
+  font-size: 28px;
+}
+
 @media only screen and (max-width: 950px) {
-  /* line 652, ../sass/layout/_main.scss */
+  /* line 702, ../sass/layout/_main.scss */
   #main .container-four .appear {
     text-align: center;
     width: 40%;
@@ -4681,16 +4730,16 @@ body.is-preload #banner > .inner {
     height: 100%;
     font-size: 16px;
   }
-  /* line 660, ../sass/layout/_main.scss */
+  /* line 710, ../sass/layout/_main.scss */
   #main .section-c {
     height: auto;
   }
-  /* line 662, ../sass/layout/_main.scss */
+  /* line 712, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-left .wscl-wrap {
     margin-right: -60px;
     margin-left: -60px;
   }
-  /* line 666, ../sass/layout/_main.scss */
+  /* line 716, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-left {
     max-width: 700px;
     padding: 80px 0px;
@@ -4700,39 +4749,43 @@ body.is-preload #banner > .inner {
     float: none;
     clear: both;
   }
-  /* line 674, ../sass/layout/_main.scss */
+  /* line 724, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-left .wscl-wrap {
     display: block;
   }
-  /* line 678, ../sass/layout/_main.scss */
+  /* line 728, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-right .wscr-text {
     padding: 80px;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
   }
-  /* line 684, ../sass/layout/_main.scss */
+  /* line 734, ../sass/layout/_main.scss */
   #main .section-c .wrap-section-c .wsc-right {
     float: left;
     width: 100%;
     height: auto;
   }
-  /* line 691, ../sass/layout/_main.scss */
+  /* line 741, ../sass/layout/_main.scss */
   #main .Formations .Formation-content {
     display: block;
   }
-  /* line 693, ../sass/layout/_main.scss */
+  /* line 743, ../sass/layout/_main.scss */
   #main .Formations .Formation-content .Formation-content-image {
     width: 90%;
     margin: auto;
   }
-  /* line 697, ../sass/layout/_main.scss */
+  /* line 747, ../sass/layout/_main.scss */
   #main .Formations .Formation-content .Formation-content-text {
     padding: 5% 40px 0 39px;
   }
+  /* line 752, ../sass/layout/_main.scss */
+  #main .video-fond .swiper-container3 .swiper-wrapper .swiper-slide p {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 600px) {
-  /* line 707, ../sass/layout/_main.scss */
+  /* line 760, ../sass/layout/_main.scss */
   #main #video-fond .img-header-footer {
     background: #fff url(./../images/img-header2.jpg) center center no-repeat;
     display: block;
@@ -4740,34 +4793,29 @@ body.is-preload #banner > .inner {
     height: 100%;
     background-size: 100% auto;
   }
-  /* line 715, ../sass/layout/_main.scss */
+  /* line 768, ../sass/layout/_main.scss */
   #main .text-chiffres {
     opacity: 1;
   }
-  /* line 718, ../sass/layout/_main.scss */
+  /* line 771, ../sass/layout/_main.scss */
   #main .transi1, #main .transi2, #main .transi3, #main .transi4, #main .transi5, #main .transi6, #main .transi7, #main .transi8, #main .transi9, #main .transi10, #main .transi11, #main .transi12 {
     opacity: 1;
   }
-  /* line 722, ../sass/layout/_main.scss */
+  /* line 775, ../sass/layout/_main.scss */
   #main .div-section img {
     width: 50px;
   }
-  /* line 728, ../sass/layout/_main.scss */
+  /* line 781, ../sass/layout/_main.scss */
   #main .Formations .Formation-content .Formation-content-image {
     width: 100%;
   }
-  /* line 731, ../sass/layout/_main.scss */
+  /* line 784, ../sass/layout/_main.scss */
   #main .Formations .Formation-content .Formation-content-text {
     padding: 50px 40px 0 40px;
   }
 }
 @media only screen and (max-width: 420px) {
-  /* line 739, ../sass/layout/_main.scss */
-  #video-fond {
-    height: 100%;
-  }
-
-  /* line 744, ../sass/layout/_main.scss */
+  /* line 794, ../sass/layout/_main.scss */
   #main .container-four .appear {
     text-align: center;
     width: 90%;
@@ -4777,7 +4825,7 @@ body.is-preload #banner > .inner {
     padding-left: 25px;
     padding-right: 25px;
   }
-  /* line 755, ../sass/layout/_main.scss */
+  /* line 805, ../sass/layout/_main.scss */
   #main .container-objectifs .appear {
     text-align: center;
     width: 85%;
@@ -4786,9 +4834,17 @@ body.is-preload #banner > .inner {
     padding: 0 3%;
     margin-bottom: 15px;
   }
+  /* line 815, ../sass/layout/_main.scss */
+  #main .video-fond .swiper-container3 .swiper-wrapper .swiper-slide p {
+    font-size: 16px;
+  }
+  /* line 819, ../sass/layout/_main.scss */
+  #main .video-fond .swiper-container3 .swiper-wrapper .swiper-slide h1 {
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 400px) {
-  /* line 770, ../sass/layout/_main.scss */
+  /* line 828, ../sass/layout/_main.scss */
   #main .container-objectifs .appear {
     width: 90%;
   }
