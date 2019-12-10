@@ -4347,7 +4347,7 @@ body.is-preload #banner > .inner {
 /* line 346, ../sass/layout/_main.scss */
 .section-c .wrap-section-c .wsc-left .wscl-wrap .box-count .bcount-right {
   margin-left: 160px;
-  width: 100px;
+  width: 120px;
   height: 150px;
 }
 
@@ -5065,13 +5065,19 @@ body.is-preload #banner > .inner {
   }
 }
 /* Footer */
-/* line 11, ../sass/layout/_footer.scss */
+/* line 12, ../sass/layout/_footer.scss */
+#footer .content .content-text {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+/* line 19, ../sass/layout/_footer.scss */
 #footer .copyright {
   font-size: 0.8em;
   list-style: none;
   padding-left: 0;
 }
-/* line 16, ../sass/layout/_footer.scss */
+/* line 24, ../sass/layout/_footer.scss */
 #footer .copyright li {
   border-left: solid 1px rgba(212, 212, 255, 0.1);
   color: rgba(244, 244, 255, 0.2);
@@ -5080,22 +5086,22 @@ body.is-preload #banner > .inner {
   margin-left: 1em;
   padding-left: 1em;
 }
-/* line 24, ../sass/layout/_footer.scss */
+/* line 32, ../sass/layout/_footer.scss */
 #footer .copyright li:first-child {
   border-left: 0;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 31, ../sass/layout/_footer.scss */
+/* line 39, ../sass/layout/_footer.scss */
 #footer .icons {
   text-align: center;
 }
-/* line 34, ../sass/layout/_footer.scss */
+/* line 42, ../sass/layout/_footer.scss */
 #footer .icon.alt:before {
   background-color: #231F20;
 }
 @media screen and (max-width: 480px) {
-  /* line 40, ../sass/layout/_footer.scss */
+  /* line 48, ../sass/layout/_footer.scss */
   #footer .copyright li {
     display: block;
     border-left: 0;
