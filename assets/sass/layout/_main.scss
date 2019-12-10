@@ -103,6 +103,7 @@
 		max-width: 100%;
 		width: 100vw;
 		height: 100vh;
+		height: calc(var(--vh, 1vh) * 100);
 		display: block;
 	  object-fit: cover;
 		.img-header {
@@ -532,31 +533,30 @@
 	}
 
 	.section-video {
-		height: 615px;
 		width: 100%;
 		background: #000000;
 		position: relative;
-		.sc-bg {
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			opacity: 0.8;
-			top: 0px;
-			left: 0px;
-			background-image: url(../images/fond-drone-video.jpg);
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			background-attachment: fixed;
-			height: 100%;
-			width: 100%;
-			text-align: center;
-			.video-formation {
-				max-width: 950px;
-				width: 100%;
-			}
-		}
+		// .sc-bg {
+		// 	position: absolute;
+		// 	display: flex;
+		// 	justify-content: center;
+		// 	align-items: center;
+		// 	opacity: 0.8;
+		// 	top: 0px;
+		// 	left: 0px;
+		// 	background-image: url(../images/fond-drone-video.jpg);
+		// 	background-repeat: no-repeat;
+		// 	background-position: center;
+		// 	background-size: cover;
+		// 	background-attachment: fixed;
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	text-align: center;
+		// 	.video-formation {
+		// 		max-width: 950px;
+		// 		width: 100%;
+		// 	}
+		// }
 	}
 	// Formation //
 	.Formations {
@@ -777,9 +777,6 @@
 						background-size: auto;
 						background: #fff url(./../images/img-header-desk.jpg) center center no-repeat;
 					}
-				}
-				.section-video {
-					height: 350px;
 				}
 				.text-chiffres {
 		 			opacity: 1;
