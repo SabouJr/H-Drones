@@ -45,14 +45,14 @@
 			}
 		}
 		.div-section {
-			height: 500px;
+			height: 510px;
 			width: 60%;
 			border-top: solid 3px _palette(chart-yellow);
 			border-bottom: solid 3px _palette(chart-yellow);
 			background-color: #ffffff;
 			text-align: center;
 			color: #000000;
-			top: -500px;
+			top: -540px;
 			left: 20%;
 			margin: 0 auto;
 			z-index: 9999;
@@ -93,9 +93,13 @@
 	@include breakpoint('<=xsmall') {
 		#main {
 			.div-section {
-				height: 500px;
+				height: 530px;
 				width: 80%;
 				left: 10%;
+				img {
+					width: 60px;
+					margin-top: 45px;
+				}
 			}
 		}
 	}
