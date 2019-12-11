@@ -4818,14 +4818,6 @@ body.is-preload #banner > .inner {
     background-size: auto;
     background: #fff url(./../images/img-header-desk.jpg) center center no-repeat;
   }
-  /* line 783, ../sass/layout/_main.scss */
-  #main .text-chiffres {
-    opacity: 1;
-  }
-  /* line 786, ../sass/layout/_main.scss */
-  #main .transi1, #main .transi2, #main .transi3, #main .transi4, #main .transi5, #main .transi6, #main .transi7, #main .transi8, #main .transi9, #main .transi10, #main .transi11, #main .transi12 {
-    opacity: 1;
-  }
   /* line 790, ../sass/layout/_main.scss */
   #main .div-section img {
     width: 50px;

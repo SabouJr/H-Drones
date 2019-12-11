@@ -64,8 +64,30 @@ $(document).ready(function() {
        $('.transi6').css("opacity", "1");
      }
    });
- }
-
+ } else {
+   $(window).scroll(function() {
+    if($(window).scrollTop() >= $secteursBottom - 50) {
+      $('.transi10').css("opacity", "1");
+      $('.transi11').css("opacity", "1");
+      $('.transi12').css("opacity", "1");
+    }
+    if($(window).scrollTop() >= $videoBottom) {
+      $('.transi7').css("opacity", "1");
+      $('.transi8').css("opacity", "1");
+      $('.transi9').css("opacity", "1");
+    }
+    if($(window).scrollTop() >= $objectifsBottom) {
+      $('.transi1').css("opacity", "1");
+      $('.transi2').css("opacity", "1");
+      $('.transi3').css("opacity", "1");
+    }
+    if($(window).scrollTop() >= $palmaresBottom - 400) {
+      $('.transi4').css("opacity", "1");
+      $('.transi5').css("opacity", "1");
+      $('.transi6').css("opacity", "1");
+    }
+  });
+ };
   // Hide & Show video header when menu is open
  $("#menu-nav").on( "click", function() {
    $("#video-fond").addClass("remove-video");
