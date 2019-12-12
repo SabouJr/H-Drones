@@ -5123,12 +5123,17 @@ body.is-preload #banner > .inner {
   width: 100%;
   display: block;
 }
-/* line 10, ../sass/layout/_wrapper.scss */
+/* line 12, ../sass/layout/_wrapper.scss */
+#wrapper #form-formation img {
+  height: 300px;
+  width: 600px;
+}
+/* line 18, ../sass/layout/_wrapper.scss */
 #wrapper .text-formation {
   text-align: center;
   margin-top: 50px;
 }
-/* line 20, ../sass/layout/_wrapper.scss */
+/* line 28, ../sass/layout/_wrapper.scss */
 #wrapper.is-transitioning {
   opacity: 0;
 }
