@@ -10,7 +10,7 @@
 
 		#form-formation {
 			img {
-				height: 300px;
+				height: 350px;
 				width: 600px;
 			}
 		}
@@ -37,3 +37,19 @@
 
 		}
 	}
+
+	@media only screen and (max-width: 600px) {
+		#wrapper #form-formation img {
+			height: 200px;
+			width: 300px;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		#wrapper #form-formation img {
+			height: 150px;
+			width: 250px;
+		}
+	}
+
+	
