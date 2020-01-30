@@ -9,10 +9,10 @@ $(function() {
     $form.submit(function(event) {
         // Stop the browser from submitting the form.
         event.preventDefault();
-        console.log("test ==>"+ $form);
         // Serialize the form data.
         var formData = $form.serialize();
         // Submit the form using AJAX.
+
         $.ajax({
             type: 'POST',
             url: $form.attr('action'),

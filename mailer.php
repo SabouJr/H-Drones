@@ -7,6 +7,7 @@
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
+        $captcha = $_POST["g-recaptcha-response"];
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -32,8 +33,16 @@
         $email_headers  = 'MIME-Version: 1.0' . "\r\n";
         $email_headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
+        $secretKey = "6LdVSdQUAAAAAE96AaIhnFOdkF4XrKQuso5igVRG";
+        $ip = $_SERVER['REMOTE_ADDR'];
+        // post request to server
+        $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+        $response = file_get_contents($url);
+        $responseKeys = json_decode($response,true);
+        // should return JSON with success as true
+
         // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+        if (mail($recipient, $subject, $email_content, $email_headers) && $responseKeys["success"]) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Thank You! Your message has been sent.";

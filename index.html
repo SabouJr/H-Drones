@@ -831,7 +831,8 @@ organismes qui sont en adéquation avec les valeurs de Hdrones, soit :<br/>bonif
 												<textarea placeholder="Entrez votre message" name="message" id="message" rows="6" required></textarea>
 											</div>
 										</div>
-										<button type="submit" class="order g-recaptcha" data-sitekey="6LfgQtQUAAAAAOsZGAZMd1p97zOy0vRuioKqqsvZ" data-callback="onSubmitCaptcha"><span class="default">Envoyer</span><span class="success">Ok
+										<div class="g-recaptcha" data-sitekey="6LdVSdQUAAAAAJpalo-511Xhn88yQNjUyeC2SzxI"></div>
+										<button type="submit" class="order"><span class="default">Envoyer</span><span class="success">Ok
 											    <svg viewbox="0 0 12 10">
 											      <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 											    </svg></span>
@@ -900,12 +901,8 @@ organismes qui sont en adéquation avec les valeurs de Hdrones, soit :<br/>bonif
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/home.js"></script>
 			<script src="assets/js/nav.js"></script>
-			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+			<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 			<script>
-				function onSubmitCaptcha(token) {
-					document.getElementById("ajax-contact").submit();
-				}
-
 				var swiper = new Swiper('.video-fond .swiper-container', {
 					speed: 2000,
 					spaceBetween: 30,
