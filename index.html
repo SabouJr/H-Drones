@@ -146,7 +146,7 @@ convivial autour de vos plats préférés à partager avec vos proches ou vos co
 									<a class="close close-section" >Close</a>
 									<img src="./assets/images/shopping-basket.png" alt="picto_pharmacy">
 									<h1>Grande distribution</h1>
-									<p>Faites-vous livrer vos achats divers et variés directement chez vous ou à un point relais, via l'un de nos drones. <br/><br/> 
+									<p>Faites-vous livrer vos achats divers et variés directement chez vous ou à un point relais, via l'un de nos drones. <br/><br/>
 									   Notre solution pour la livraison du dernier kilomètre répond à des enjeux et problématiques liés aux engorgement des centres-villes.</p>
 								</div>
 							</article>
@@ -613,7 +613,7 @@ organismes qui sont en adéquation avec les valeurs de Hdrones, soit :<br/>bonif
 													<div class="flag-container">
 														<img src="./assets/images/drapeau-fr.png" alt="France">
 													</div>
-													<p>Représentant pour le TEDx au service de l’Homme par Deloitte 
+													<p>Représentant pour le TEDx au service de l’Homme par Deloitte
 														au sein de la Greenhouse</p>
 												</div>
 											</div>
@@ -831,7 +831,8 @@ organismes qui sont en adéquation avec les valeurs de Hdrones, soit :<br/>bonif
 												<textarea placeholder="Entrez votre message" name="message" id="message" rows="6" required></textarea>
 											</div>
 										</div>
-										<button type="submit" class="order"><span class="default">Envoyer</span><span class="success">Ok
+										<button class="g-recaptcha" data-sitekey="6LfgQtQUAAAAAOsZGAZMd1p97zOy0vRuioKqqsvZ" data-callback='onSubmit'>Submit</button>
+										<button type="submit" class="order g-recaptcha" data-sitekey="your_site_key" data-callback="onSubmitCaptcha"><span class="default">Envoyer</span><span class="success">Ok
 											    <svg viewbox="0 0 12 10">
 											      <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 											    </svg></span>
@@ -900,7 +901,12 @@ organismes qui sont en adéquation avec les valeurs de Hdrones, soit :<br/>bonif
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/home.js"></script>
 			<script src="assets/js/nav.js"></script>
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 			<script>
+				function onSubmitCaptcha(token) {
+					document.getElementById("demo-form").submit();
+				}
+
 				var swiper = new Swiper('.video-fond .swiper-container', {
 					speed: 2000,
 					spaceBetween: 30,
