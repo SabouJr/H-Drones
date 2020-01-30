@@ -9,7 +9,7 @@ $(function() {
     $form.submit(function(event) {
         // Stop the browser from submitting the form.
         event.preventDefault();
-
+        console.log("test ==>"+ $form);
         // Serialize the form data.
         var formData = $form.serialize();
         // Submit the form using AJAX.
@@ -22,10 +22,10 @@ $(function() {
             // Make sure that the formMessages div has the 'success' class.
             $formMessages.removeClass('error');
             $formMessages.addClass('success');
-        
+
             // Set the message text.
             $formMessages.text(response);
-        
+
             // Clear the form.
             $('#name').val('');
             $('#email').val('');
@@ -43,7 +43,7 @@ $(function() {
             // Make sure that the formMessages div has the 'error' class.
             $formMessages.removeClass('success');
             $formMessages.addClass('error');
-        
+
             // Set the message text.
             if (data.responseText !== '') {
                 $formMessages.text(data.responseText);
